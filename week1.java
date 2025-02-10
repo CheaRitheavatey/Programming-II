@@ -1,5 +1,11 @@
+import java.util.Date;
+import java.awt.Point;
+
 public class week1 {
 
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         System.out.println("Hello world");
         
@@ -50,19 +56,39 @@ public class week1 {
         // some method or function for string
         String greething = "Hello EveryONE";
         System.out.println("length: "+ greething.length());
+
         System.out.println("char e: "+ greething.charAt(e));
+
         System.out.println("touppercase: "+ greething.toUpperCase());
+        
         System.out.println("tolowercase: "+ greething.toLowerCase());
+
         System.out.println("indexOf: "+ greething.indexOf('y'));
-        System.out.println("indexOf: "+ greething.indexOf("ONE"));
+        
+        System.out.println("indexOf: "+ greething.indexOf("one")); // return -1 if no occurrance
+        
         System.out.println("indexOf: "+ greething.indexOf('o',6));
+        
+        System.out.println("contains: "+ greething.contains("o")); // return true or false if it contain
+        
+        System.out.println("equals: "+ greething.equals("hello all")); // return true or false if both string are the same
+        
+        System.out.println("equals: "+ greething.equalsIgnoreCase("hello all")); // return true or false if both string are the same and it ignore the upper or lowercase
+                
+        System.out.println("replace: "+ greething.replace("e","-_-")); // to keep the whatever that we want to replace we have to initalize and assign it to new variable
+        
+        System.out.println("trim: "+ greething.trim()); // trim all the whitespace
+
+        // reference type example
+        Point point1 = new Point(20,50);
+        Point point2 = point1;
+        point1.y = 30;
+        System.out.println("reference type was used to copy: "+ point2);
 
 
 
         
 
 
-
-        
     }
 }

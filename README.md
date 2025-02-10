@@ -37,3 +37,20 @@ java code (.java file) --> complier (can be assembly) --> byte code (.class file
     - .contains()
     - .charAt()
     - .indexOf(argument)
+    - .indexOf(argument, startFromIndex)
+    - .lastIndexOf(argument)
+    - .trim() // remove whitespace
+
+- escape character
+\'
+\"
+\\
+\t is for tab
+\n is for new line
+
+- String is immutable
+
+- StringBuilder is mutable
+
+- reference type example using two methods,
+    
