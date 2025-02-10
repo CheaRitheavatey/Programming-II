@@ -52,5 +52,13 @@ java code (.java file) --> complier (can be assembly) --> byte code (.class file
 
 - StringBuilder is mutable
 
-- reference type example using two methods,
+- reference type example using two methods
+
+- array: used to store mulitple values in a single variable.
+    array have fixed size and items cannot be added or removed after creation
+
+    two ways to create array:
     
+    int[] array = new int[10];
+
+    int[] array = {1,2,3,4,5,6,7,8,9,10};

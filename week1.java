@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Date;
 import java.awt.Point;
 
@@ -85,10 +86,30 @@ public class week1 {
         point1.y = 30;
         System.out.println("reference type was used to copy: "+ point2);
 
+        // array
+        String[] array = {"apple", "banana", "cat"};
 
+        array[2] = "coconut"; 
+        System.out.println(Arrays.toString(array));
+        System.out.println("length of the array: "+array.length);
 
-        
+        Arrays.sort(array); // sort array;
 
+        // multi-dimension
+        int[][] multiArray = {
+            {1,2,3}, // [0][0] [0][1] [0][2]
+            {4,5,6}, // [1][0] [1][1] [1][2]
+            {7,8,9}  // [2][0] [2][1] [2][2]
 
+        };
+
+        // to print multi-dimension array
+        for (int i = 0; i<3; i++) {
+            for (int k = 0; k< 3; k++) {
+                System.out.print(multiArray[i][k]);
+
+            }
+            System.out.println();
+        }
     }
 }
