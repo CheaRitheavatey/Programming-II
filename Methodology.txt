@@ -45,3 +45,8 @@ some paradigms concern about execution model such as code into unit along with t
         do not consider any language as separated because it provided a strucutre
         its just give a new way to structure the program 
         language = Java, C#
+
+
+    - frontend: what user see
+    - backend: how everything work
+    both have to connect and work together
