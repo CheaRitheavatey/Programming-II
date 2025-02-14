@@ -103,11 +103,11 @@ public class week1 {
 
         };
 
+
         // to print multi-dimension array
         for (int i = 0; i<3; i++) {
             for (int k = 0; k< 3; k++) {
                 System.out.print(multiArray[i][k]);
-
             }
             System.out.println();
         }
