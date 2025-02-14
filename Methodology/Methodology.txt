@@ -50,3 +50,50 @@ some paradigms concern about execution model such as code into unit along with t
     - frontend: what user see
     - backend: how everything work
     both have to connect and work together
+
+
+Java overview: based on C+ but desgined to be smaller, simpler and more reliable
+- all java subprograms are methods and are defined in classes. java is a class based, oop language
+
+- why use java?
+    - open source
+    - cross platform
+    - most popular programming language with a huge community 
+    - oo language which gives a clear structure to program
+    - free compiler/interpreter system which can be easily obtain on the web
+
+- jdk = jre (jvm + library classes) + devlopment tools
+
+- compliation and execution:
+    java need 2 step exectuion:
+        1. create a java program
+        2. complie the program
+        3. execute the program (class that contrain main method)
+
+        .java file --> compiler --> .class file --> jvm (java virtual machine) --> machine code
+
+primary component of computer:
+    - internal memeory: store data and program
+    - processor: collection of circuit that provide a realization of a set of primitive operations, or machine instruction such as those for arithetic and logic operation (ex. cpu)
+                microintstruction = low level
+    - machine language system need many os facilities, they interface with the os rather than directly with the processor in machine language
+    - os and language implementatin are layered over the machine language 
+
+    - layer we have on top of the machine: bare machine -> microinstructor -> os -> language (depend on the language there will be ) -> complier on top.
+
+
+- implementation method:
+    - compliation: just translated into machine language and done. 
+                (+): really fast execution once the translation process is complete. 
+                (-): slower when apply changes to the source code because the translation process must be redone.
+                (ex. C, COBOL, C++) 
+    - pure interpretation: opposite of compliation, there will be another program that act as an interpreter like fetch-execute cycle
+                (+): allow easy implementation ofmany source level debugging operation (ex. show detail in error message, show the stack trace, etc.)
+                (-): very slow exectuion cause b y decoding of the high-level language statement, must be decoded everytime regardless of how many times a statement is executed, need more space
+                (ex. python)
+    - hybrid interpretation (java): they translated high level language program to intermediate (byte code for java) and then during exection it complier intermediate language into machine code.
+                they implementated JIT (just in time), no preprocessor for java
+                (+): very fast exectuion
+
+
+- variable: abstraction of a computer memory cell/ collection of cell.
