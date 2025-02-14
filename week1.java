@@ -52,6 +52,7 @@ public class week1 {
         float thirtytwofloat = 32e2F; // 32 bits
         double sixtyfourdouble = 64D; // 64 bits
         char ch = 'a'; // 16 bits
+        char ca = 111;
         boolean bool = true; // 1 bit
 
         // some method or function for string
