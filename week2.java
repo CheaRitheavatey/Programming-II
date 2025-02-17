@@ -1,3 +1,6 @@
+import java.util.Random;
+import java.util.Scanner;
+
 public class week2 {
     public static void widening() {
         // widening = you dont need any casting it will automatically do it for you
@@ -29,8 +32,8 @@ public class week2 {
         int f = 8/3; // this result will be in int
         float fl = 8/3F; // the result will be in float
 
-        // System.out.println(f);
-        // System.out.println(fl);
+        System.out.println(f);
+        System.out.println(fl);
 
         // post increment and pre increment
         int a = 100;
@@ -47,13 +50,45 @@ public class week2 {
         // math class
         System.out.println((int)(Math.random()*10)); // Math.random alone is going to be between 0 and 1 so we need to multiply by the range
     }
+    public static void practice1() {
+        // generate random whole number between 1 and less than 20 from math class
+        System.out.println((int)(Math.random()*20+1));
+
+        // Random class
+        Random rand = new Random();
+        System.out.println(rand.nextInt(3)+1); // +1 so it can start from 1 instead of 0 so [1,3], without passing an argument it will generate range of int
+        System.out.println(rand.nextInt(1,3)); // same as above from [1,3)
+    }
+
+    public static void practice2() {
+        // ask user for their name and year of births
+        // print in the console "Welcome ame you are age years old"
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("What's your name? ");
+        String name = scanner.nextLine(); //.next will only take it whats before space. so use .nextLine() for the whole line
+
+        System.out.print("How old are you? ");
+        int age = scanner.nextInt();
+
+        scanner.close();
+        System.out.println("Welcome " + name + " you are " + age + " years old.");
+
+    }
 
 
     public static void main(String[] args) {
         // widening();
         // narrowing();
         // wrapperClass();
-        arithmeticOperator();
+        // arithmeticOperator();
+        // practice1();
+        practice2();
+
+
+       
+
+        
     }
     
 }
