@@ -62,3 +62,27 @@ java code (.java file) --> complier (can be assembly) --> byte code (.class file
     int[] array = new int[10];
 
     int[] array = {1,2,3,4,5,6,7,8,9,10};
+
+
+widening casting: when going from small to larger
+    ex. byte > short > char > int > float > long
+narrowing casting: when going form larger to smaller
+    ex long > float
+
+- wrapper class: way to use primitive type as object
+- wrapper class: start with a capital letter
+    ex. Integer, Long, Float, Double, Character, Boolean
+
+    ex. String str = "168";
+        int string = Integer.parseInt(str);
+
+
+- math class:
+    - Math.abs()
+    - Math.max()
+    - Math.min()
+    - Math.random()
+    - Math.round()
+    - Math.ceil()
+    - Math.floor()
+    - Math.sqrt()
