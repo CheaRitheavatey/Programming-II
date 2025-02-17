@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -68,8 +69,13 @@ public class week2 {
         System.out.print("What's your name? ");
         String name = scanner.nextLine(); //.next will only take it whats before space. so use .nextLine() for the whole line
 
-        System.out.print("How old are you? ");
-        int age = scanner.nextInt();
+        System.out.print("When were you born? ");
+        int year = scanner.nextInt();
+
+        
+        int currentYear = LocalDate.now().getYear();
+        int age = currentYear-year;
+        // we have class to get the current time and year
 
         scanner.close();
         System.out.println("Welcome " + name + " you are " + age + " years old.");
