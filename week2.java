@@ -79,7 +79,30 @@ public class week2 {
 
         scanner.close();
         System.out.println("Welcome " + name + " you are " + age + " years old.");
+        System.out.printf("age %d", age);
 
+
+    }
+
+    public static void practice3() {
+
+        // ask user for the password 
+        // if the password is correct print welcome else keep asking for password
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter Password: ");
+        String password = scanner.next();
+
+        while (true) {
+            System.out.println("What is your password? ");
+            String verify = scanner.next();
+
+            if (!password.equals(verify)) {
+                continue;
+            } else {
+                System.out.println("welcome");
+                break;
+            }
+        }
     }
 
 
@@ -89,10 +112,78 @@ public class week2 {
         // wrapperClass();
         // arithmeticOperator();
         // practice1();
-        practice2();
+        // practice2();
+
+        // if ternary operator
+        // if someone is 18 then you are eligible
+       int age = 19;
+       String message = age > 18 ? "you are eligible" : "you are not eligible";
+       System.out.println(message);
 
 
-       
+
+       // switch
+       int grade = 5;
+       switch (grade) {
+        case 1:
+            System.out.println("grade 1");
+            break;
+        case 2:
+            System.out.println("grade 2");
+            break;
+        case 3:
+            System.out.println("grade 3");
+            break;
+        case 4:
+            System.out.println("grade 4");
+            break;
+        case 5:
+            System.out.println("grade 5");
+            break;  
+        default:
+            System.out.println("default grade");
+            break;
+       }
+
+       // loop
+       int l = 6;
+       while (l > 0) {
+        System.out.println(l);
+        l--;
+       }
+
+       // do while = do something while the condition is true
+       do{
+        System.out.println(l);
+        l--;
+       } while (l>0);
+
+       // for loop
+       for (int i = 0; i< 4; i++) {
+            for (int j = 4; j >i;j--) {
+                System.out.print(" ");
+            }
+
+            for (int j = 0; j < i;j++) {
+                System.out.print("*");
+            }
+
+            for (int j = 1; j < i;j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+       }
+
+       practice3();
+       // print even number from 1 to 10
+    //    for (int i = 1; i<=10; i++) {
+    //     System.out.println(2*i);
+    //    }
+    //    for (int i = 1; i<=10; i+=2) {
+    //     System.out.println(i);
+    //    } // another way to print even
+
+    
 
         
     }

@@ -86,3 +86,26 @@ narrowing casting: when going form larger to smaller
     - Math.ceil()
     - Math.floor()
     - Math.sqrt()
+
+
+- ternary operator
+variable = (condition) ? valueIfTrue : valueIfFalse;
+example int x = 10;
+
+x > 5 ? System.out.println("x is greater than 5") : System.out.println("x is less than 5");
+
+
+- switch case block
+example,
+
+switch (variable) { 
+    case 1:
+        System.out.println("case 1");
+        break;
+    case 2:
+        System.out.println("case 2");
+        break;
+    default:
+        System.out.println("default");
+        break;
+}
