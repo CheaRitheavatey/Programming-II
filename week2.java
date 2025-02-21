@@ -103,6 +103,8 @@ public class week2 {
                 break;
             }
         }
+
+        scanner.close();
     }
 
 
