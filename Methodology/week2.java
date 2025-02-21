@@ -1,9 +1,62 @@
 package Methodology;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class week2 {
+    // asking input from user
+    public static void askInput() {
+        
+        while (true) {
+            Scanner scanner = new Scanner(System.in);
+
+            String password;
+
+            // ask user for name
+            System.out.print("What is your name?: ");
+            String name = scanner.nextLine();
+
+            
+            while (true) {
+                System.out.print("What is your password (length >= 6 length): ");
+                password = scanner.nextLine();
+
+                if (password.length() < 6) {
+                    System.out.println("Please enter password more than length 6");
+                    continue;
+                }
+                break;
+            }
+
+            // ask user to input their password length of more than 6 characters if its right then say welcome name if not ask again and again
+            while (true) {
+                System.out.print("Enter Password: ");
+                String verify = scanner.nextLine();
+
+                
+
+                if (password.equals(verify)) {
+                    System.out.println("Welcome " + name + " !!!!");
+                    break;
+                } else {
+                    continue;
+                }
+
+            }
+        
+            // as user again
+            System.out.println("Do you want to enter again? (y/n): ");
+            String again = scanner.next();
+
+            if (again.equals("y")) {
+                break;
+            }
+
+            scanner.close();
+        }
+    }
     public static void main(String[] args) {
+        askInput();
         // type conversion: widening or narrowing
 
         // when widening you dont have to specify anything like
@@ -60,9 +113,8 @@ public class week2 {
         // random
         System.out.println((int) Math.random()*10); // generate random number using Math class
         Random rand = new Random(); // generae random number using Random class
-        System.out.println(rand.nextInt(1,10));
-        
-
+        System.out.println(rand.nextInt(1,10)); 
+        // for float is rand.nextFloat(), ,nextBoolean(), etc...
 
     }
         
