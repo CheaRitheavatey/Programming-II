@@ -119,3 +119,69 @@ switch (variable) {
     - block: group of 0 or more statement
     - statement: for example, int a =10;
     
+
+- collection = move object into a single unit
+    - Set -> SortSet: (HashSet) cannot contain duplicate
+    - List: from ArrayList can contain duplicate
+   
+    - Queue: hold element piror to processing (using use linked list)
+    - Deque: (double ended queue) which can be modify from begining to the end (use linked list)
+    
+    - Map -> SortMap (have key and value)
+
+    - to use: specify the type that going to contain in the collection 
+    
+
+    - ArrayList:
+        - resizeable
+        - method: 
+            .add() - add new element
+            .remove() - remove element
+            .get() - access element
+            .set() - change the specidied index's value
+            .size() - return the number of element
+            
+    - LinkedList:
+        method:
+            .add() - add new element
+            .remove() - remove element
+            .get() - access element
+            .set() - change the specidied index's value
+            .size() - return the number of element
+            .addFirst() - add new element at the begining
+            .addLast() - add new element at the end
+            .removeFirst() - remove element at the begining
+            .removeLast() - remove element at the end
+    
+    - HashMap: (key, value)
+        method:
+            .put() - add new element
+            .get() - access element
+            .remove() - remove element
+            .size() - return the number of element
+            .clear() - remove all element
+            .containsKey() - check if the key exist
+            .containsValue() - check if the value exist
+            .keySet() - access all the key
+            .values() - access all the value
+        
+
+    - HashSet:
+        method:
+            .add() - add new element
+            .remove() - remove element
+            .size() - return the number of element
+            .clear() - remove all element
+            .contains() - check if the element exist
+            .isEmpty() - check if the set is empty
+    
+    - Collection class:
+        method:
+            .toArray() - convert collection to array
+            .contains() - check if the element exist
+            .isEmpty() - check if the collection is empty
+            .sort() - sort the collection
+            .shuffle() - shuffle the collection
+            .subList() - return a sublist of the collection
+            .copy() - copy the collection
+    
