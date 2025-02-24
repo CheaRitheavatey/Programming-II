@@ -109,3 +109,13 @@ switch (variable) {
         System.out.println("default");
         break;
 }
+
+- method:
+    - method have modifier (static) , return type, method name, pair of parenteness() and a body {}
+        - static = it belong to class not the object of the class
+    - method with the can have the same name can have different parameters
+    - method with the can have the same name can have different return type
+    - expression: is a construct make up of variable, operators, and method invocation
+    - block: group of 0 or more statement
+    - statement: for example, int a =10;
+    
