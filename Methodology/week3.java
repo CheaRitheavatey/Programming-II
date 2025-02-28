@@ -3,13 +3,31 @@ package Methodology;
 import java.util.Scanner;
 
 public class week3 {
+    public static int vowel(String str) {
+        // convert the string to lowercase before counting
+        str = str.toLowerCase();
+        // create a method that find the number of vowel
+        char[] vowel = {'a', 'e', 'i', 'o', 'u'};
+        int count = 0;
+        
+        // loop over the str
+        for (int i = 0; i < str.length(); i++) {
+            for (char ch: vowel) {
+                if (str.charAt(i) == ch) {
+                    count += 1 ;
+                }
+            }
+        }
+
+        return count;
+    }
     public static void pattern2(int n) {
         for (int i = 0; i < n; i++) {
             for (int j = n; j > i; j--) {
                 System.out.print(" ");
             }
             for (int j = 0; j <i ; j++) {
-                System.out.print(" *");
+                System.out.print("*");
             }
             System.out.println();
         }
@@ -65,8 +83,9 @@ public class week3 {
         scanner.close();
     }
     public static void main(String[] args) {
-        pattern2(5);
-        pattern(5);
+        System.out.println(vowel("Ae i hhhhhhhh O"));
+        // pattern2(5);
+        // pattern(5);
     
         
     }

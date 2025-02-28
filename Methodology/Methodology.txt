@@ -102,3 +102,6 @@ primary component of computer:
 - for loop
 - break: jump out of the loop and done like exection
 - continue: when you want to skip a certain step, it will go back to go the top, and start the next cycle of loop
+
+- method overload: method with the can have the same name can have different parameters 
+ method overide:  means having two methods with the same arguments, but different implementations. One of them would exist in the parent class, while another will be in the derived, or child class.
