@@ -97,3 +97,8 @@ primary component of computer:
 
 
 - variable: abstraction of a computer memory cell/ collection of cell.
+
+- for each 
+- for loop
+- break: jump out of the loop and done like exection
+- continue: when you want to skip a certain step, it will go back to go the top, and start the next cycle of loop
