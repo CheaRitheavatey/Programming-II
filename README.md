@@ -202,3 +202,14 @@ switch (variable) {
 - constructor: is a special method that is called when object is created. it is used to initialize the object's state.
 
 - this keyword: refer to the current object
+
+- modifier: ACCESS MODIFIER
+    - public: can be access from anywhere
+    - private: can be access from the same class
+    - protected: can be access from the same class and subclass
+    - default: can be access from the same package 
+
+    NON ACCESS MODIFIER
+    - static: the entity to which it is applied is available outside any particular instance of class
+    - final: the final keyword indicates that the specific class cannot be entened or a mthod cannot be overridden
+    - abstract: used to declare a class as partially implemented, meaning an object cannot be created directly form that class. any subclass of an abstract class must implement the abstract methods of the abstract class.

@@ -14,6 +14,19 @@ class Car {
      }
  
      // getter setter
+     public void setSpeed(int speed) {
+        this.speed = speed;
+     }
+     public void setGear(int gear) {
+        this.gear = gear;
+     }
+
+     public int getSpeed() {
+        return speed;
+     }
+     public int getGear() {
+        return gear;
+     }
      // methods
      public void changeGear(int newValue) {
          this.gear = newValue;
@@ -33,8 +46,8 @@ class Car {
      }
  
      public void printState() {
-         System.out.println("The current speed: " + this.speed);
-         System.out.println("The current gear: " + this.gear);
+         System.out.println("The current speed: " + getSpeed());
+         System.out.println("The current gear: " + getGear());
      }
 
 }
