@@ -7,6 +7,9 @@ class Member {
     private String specialization;
 
     // constructor
+    Member() {
+        this("Default name", 0, "Default Specialization");
+    }
     Member(String name, int age, String specialization) {
         this.name = name;
         this.age = age;
