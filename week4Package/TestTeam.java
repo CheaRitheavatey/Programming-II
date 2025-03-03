@@ -12,7 +12,7 @@ class Team {
     private ArrayList<String> teamMember = new ArrayList<>();
 
     // dont want team to have the same namel
-    private HashSet<String> allteam = new HashSet<>();
+    static HashSet<String> allteam = new HashSet<>();
 
     // constructor
     Team(String teamName, String leader) {
@@ -60,8 +60,10 @@ class Team {
         Collections.sort(this.teamMember);
         return this.teamMember;
     }
-
-
+    
+    public static void a() {
+        System.out.println("static method");
+    }
     
 }
 
@@ -80,6 +82,7 @@ public class TestTeam {
         
         System.out.println("This team name: "+ team1.getTeamNate() + " with " + team1.getMember().size() + " members. team leader is " + team1.getLeader() + " all the name inside: " + team1.getMember());
     
+        Team.a(); // when using static u dont need an instance or object to access it
     }
 
     
