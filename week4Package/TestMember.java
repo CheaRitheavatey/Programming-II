@@ -11,7 +11,7 @@ class Member {
         this("Default name", 0, "Default Specialization");
     }
     Member(String name, int age, String specialization) {
-        this.name = name;
+        this.name = (!name.trim().equals("")) ? name.trim() : "unkown";
         this.age = age;
         this.specialization = specialization;
 
