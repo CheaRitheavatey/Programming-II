@@ -55,7 +55,6 @@ public class week3 {
         }
 
         // able to use collection with link list and hash set
-        Collection.sort(link);
         
     }
     public static void practice6() {

@@ -185,3 +185,20 @@ switch (variable) {
             .subList() - return a sublist of the collection
             .copy() - copy the collection
     
+
+- OOP: the main aim of oop is to bind tgt the data and the functions that operate.
+        advantage:
+            - reusability
+            - maintainability
+            - extensibility
+            - fast
+            - clear structure
+    
+- object: instance of a class. object has 2 characteristic state and behavior (or we can say that object has data field and actions)
+- class: blue print from which individual objects are created. 
+
+- when object are created, it inherit all the variables and mthod from the class.
+
+- constructor: is a special method that is called when object is created. it is used to initialize the object's state.
+
+- this keyword: refer to the current object
