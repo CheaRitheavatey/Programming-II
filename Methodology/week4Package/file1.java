@@ -16,7 +16,7 @@ class Car {
     }
 
     Car() {
-        this(0, 1, "BMW", "blue");
+        this(0, 1,null , null);
     }
 
     // method'
@@ -64,7 +64,7 @@ public class file1 {
 
             car[i].decreaseSpeed(5);
             car[i].printall();
-            
+
             car[i].chageGear(2);
             car[i].printall();
 
