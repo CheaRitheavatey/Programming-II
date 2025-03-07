@@ -1,4 +1,4 @@
-package week4Package;
+
 class Car {
      // data field
      private int speed;
