@@ -209,7 +209,11 @@ switch (variable) {
     - protected: can be access from the same class and subclass
     - default: can be access from the same package 
 
-    NON ACCESS MODIFIER
-    - static: the entity to which it is applied is available outside any particular instance of class
+    NON-ACCESS MODIFIER
+    - static: it belong to the class and not the object that will later inheirt the class thing. the entity to which it is applied is available outside any particular instance of class
     - final: the final keyword indicates that the specific class cannot be entened or a mthod cannot be overridden
     - abstract: used to declare a class as partially implemented, meaning an object cannot be created directly form that class. any subclass of an abstract class must implement the abstract methods of the abstract class.
+
+    - method and data field all modifier can be used
+    - constructor can not be access modifier
+    - class can be use all modifier
