@@ -226,3 +226,5 @@ switch (variable) {
     - single inhertitance: one child inhert from one parent.
     - multiple inhertitance: one child inhert from parent and that child class also a parent and got inherit by other class.
     - hierachical inheritance: one parent class got inherit by many child class
+
+    - nested class are not inheritance
