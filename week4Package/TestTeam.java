@@ -66,7 +66,7 @@ class Team {
 
     @Override
     public String toString() {
-        return this.teamName + this.teamMember + this.getTeamNate();
+        return teamName;
     }
     
 }

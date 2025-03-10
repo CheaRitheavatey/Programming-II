@@ -230,3 +230,4 @@ switch (variable) {
     - nested class are not inheritance
 
     - in order for a subclass without a constructor, we need an empty constructor in the parent classgiv
+- polymorphism: it is ability of an object to take on many forms. it can be done by method overriding (runtime) and method overloading (compile time or static polymorphism). when we are using the same method to perform different thing it mean polymorphism.
