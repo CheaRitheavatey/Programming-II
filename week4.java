@@ -1,27 +1,27 @@
 
 class Car {
      // data field
-     private int speed;
-     private int gear;
+    private int speed;
+    private int gear;
      // constructor
-     Car() {
+    Car() {
          this(0, 1);
-     }
+    }
      
-     Car(int speed, int gear ) {
-         this.speed = speed;
-         this.gear = gear;
-     }
+    Car(int speed, int gear ) {
+        this.speed = speed;
+        this.gear = gear;
+    }
  
      // getter setter
-     public void setSpeed(int speed) {
+    public void setSpeed(int speed) {
         this.speed = speed;
-     }
-     public void setGear(int gear) {
+    }
+    public void setGear(int gear) {
         this.gear = gear;
-     }
+    }
 
-     public int getSpeed() {
+    public int getSpeed() {
         return speed;
      }
      public int getGear() {
@@ -56,17 +56,30 @@ public class week4 {
         Car suv = new Car();
         suv.printState();
 
+        System.out.println();
+
         Car roll = new Car(20, 3);
         roll.printState();
+
+        System.out.println();
 
         roll.changeGear(1);
         roll.printState();
 
+        System.out.println();
+
         roll.increaseSpeed(60);
         roll.printState();
 
+        System.out.println();
+
         roll.breaking(15);
         roll.printState();
+
+        System.out.println();
+
+        roll.setGear(8);
+        System.out.println(roll.getSpeed());
 
     }
    

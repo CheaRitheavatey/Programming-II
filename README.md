@@ -217,3 +217,12 @@ switch (variable) {
     - method and data field all modifier can be used
     - constructor can not be access modifier
     - class can be use all modifier
+
+
+- encapsulation: prevent data from being access by other class. it can be access by getter and setter, declare data field as private and pulic the getter and setter to access. 
+- inheritance: when a class inherit from another class, it can access all the data and method from the parent class. it can reuse the method and field in that class.
+
+    - we cannot do multiple inheritance. meaning child class can only inherit from only 1 parents.
+    - single inhertitance: one child inhert from one parent.
+    - multiple inhertitance: one child inhert from parent and that child class also a parent and got inherit by other class.
+    - hierachical inheritance: one parent class got inherit by many child class
