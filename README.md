@@ -228,3 +228,5 @@ switch (variable) {
     - hierachical inheritance: one parent class got inherit by many child class
 
     - nested class are not inheritance
+
+    - in order for a subclass without a constructor, we need an empty constructor in the parent classgiv

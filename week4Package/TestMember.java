@@ -42,6 +42,10 @@ class Member {
     public void printInfo() {
         System.out.println(" Name: " + getName() + " Age: " + getAge() + " Specialize: " + getSpecialization());
     }
+
+    // public String toString() {
+    //     return this.name;
+    // }
     
 }
 

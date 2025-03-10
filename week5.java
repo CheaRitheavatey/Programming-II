@@ -8,6 +8,10 @@ class Inheritance {
         this.a = a;
         
     }
+
+    public Inheritance() {
+        System.out.println("ad");
+    }
     public void test() {
         System.out.println(this.a= 100);
     }
@@ -21,7 +25,11 @@ class Example extends Inheritance {
         super(a); // have to put super() first before declare and set a new data field even if the constructor take in other first
         this.c = c;
     }
-    
+
+    Example() {
+        super();
+    }
+
 
     // override the parent method
     public void gettestfromparent() {
@@ -44,6 +52,8 @@ public class week5{
         System.out.println();
         Example example = new Example(10,99);
         example.test();
+
+        Example ex = new Example();
 
         System.out.println();
         Inheritance tr = new Example(11,99);

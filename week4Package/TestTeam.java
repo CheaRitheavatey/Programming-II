@@ -8,7 +8,7 @@ class Team {
     // team name; leader; list of teammmate
     private String teamName;
     private Member leader;
-    private ArrayList<Member> teamMember = new ArrayList<>();
+    protected ArrayList<Member> teamMember = new ArrayList<>();
 
     // dont want team to have the same namel
     static HashSet<String> allteam = new HashSet<>();
@@ -62,6 +62,11 @@ class Team {
     
     public static void a() {
         System.out.println("static method");
+    }
+
+    @Override
+    public String toString() {
+        return this.teamName + this.teamMember + this.getTeamNate();
     }
     
 }
