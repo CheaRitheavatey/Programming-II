@@ -1,8 +1,6 @@
 package Methodology.week4Package;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 class Book {
     // data field
@@ -12,7 +10,7 @@ class Book {
     private String publisher;
 
     private static int numberOfBooks;
-    private ArrayList<String> genre = new ArrayList<>();
+    private String genre;
 
     // constructor
     Book(String title, String author, String publisher) {
@@ -74,12 +72,12 @@ class Book {
     }
 
 
-    public ArrayList<String> getGenre() {
+    public String getGenre() {
         return genre;
     }
 
 
-    public void setGenre(ArrayList<String> genre) {
+    public void setGenre(String genre) {
         this.genre = genre;
     }
 
@@ -98,16 +96,24 @@ class Book {
 public class file2 {
     public static void main(String[] args) {
         Book.howToCreateBook();
-        Book.getNumberOfBooks(); 
+        
         
         ArrayList<Book> mylist = new ArrayList<>();
         mylist.add(new Book("Title 1", "Publsher 1"));
         mylist.add(new Book("Title 2", "Publsher 2"));
         mylist.add(new Book("Title 3", "Publsher 3"));
 
-        for (Book i: mylist) {
-            System.out.println(i.toString());
-        }
+        System.out.println(mylist);
+
+        // add genre of book title 1
+        mylist.get(0).setGenre("sci-fi");
+        System.out.println(Book.getNumberOfBooks()); 
+
+
+
+        
+
+
     }
     
 

@@ -220,15 +220,22 @@ switch (variable) {
 
 
 - encapsulation: (set data field to private and add getter and setter) prevent data from being access by other class. it can be access by getter and setter, declare data field as private and pulic the getter and setter to access. 
+
 - inheritance: when a class inherit from another class, it can access all the data and method from the parent class. it can reuse the method and field in that class.
-
+    
     - we cannot do multiple inheritance. meaning child class can only inherit from only 1 parents.
-    - single inhertitance: one child inhert from one parent.
-    - multiple inhertitance: one child inhert from parent and that child class also a parent and got inherit by other class.
-    - hierachical inheritance: one parent class got inherit by many child class
 
-    - nested class are not inheritance
+    - type of inheritance:
+        - single inhertitance: one child inhert from one parent.
+        - multiple inhertitance: one child inhert from parent and that child class also a parent and got inherit by other class.
+        - hierachical inheritance: one parent class got inherit by many child class
+        - hybrid inheritance: combination of multiple and hierachical inheritance
+
+    - constructor is not a memeber of the class so it does not inherit
+
+    - subclass inherit all the member which include: field, mehtod and nested class.
 
     - in order for a subclass without a constructor, we need an empty constructor in the parent classgiv
 
 - polymorphism: it is ability of an object to take on many forms. it can be done by method overriding (runtime) and method overloading (compile time or static polymorphism). when we are using the same method to perform different thing it mean polymorphism.
+
