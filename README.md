@@ -219,7 +219,7 @@ switch (variable) {
     - class can be use all modifier
 
 
-- encapsulation: prevent data from being access by other class. it can be access by getter and setter, declare data field as private and pulic the getter and setter to access. 
+- encapsulation: (set data field to private and add getter and setter) prevent data from being access by other class. it can be access by getter and setter, declare data field as private and pulic the getter and setter to access. 
 - inheritance: when a class inherit from another class, it can access all the data and method from the parent class. it can reuse the method and field in that class.
 
     - we cannot do multiple inheritance. meaning child class can only inherit from only 1 parents.
@@ -230,4 +230,5 @@ switch (variable) {
     - nested class are not inheritance
 
     - in order for a subclass without a constructor, we need an empty constructor in the parent classgiv
+
 - polymorphism: it is ability of an object to take on many forms. it can be done by method overriding (runtime) and method overloading (compile time or static polymorphism). when we are using the same method to perform different thing it mean polymorphism.
