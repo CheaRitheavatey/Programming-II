@@ -239,3 +239,11 @@ switch (variable) {
 
 - polymorphism: it is ability of an object to take on many forms. it can be done by method overriding (runtime) and method overloading (compile time or static polymorphism). when we are using the same method to perform different thing it mean polymorphism.
 
+
+- abstraction: process of hinding certain detail and showing only essential information to the user.
+- abstraction can be achieve with either abstract classes or interface
+- we use abstraction when we want to create a superclass that only defines a geralization form that will be shared by all of its subclasses, leaving it to each subclass to fill in the detail.
+
+- abstract keyword is a non-access modifier, used for classes and method.
+- abtract method have no implementation and abstract method can only take abstract class
+
