@@ -28,6 +28,9 @@ abstract class Shape {
 }
 public class TestShape {
     public static void main(String[] args) {
+        callColor();
+        System.out.println(Color.YELLOW.getRGB()); // to use the rgb
+
         Rectangle r1 = new Rectangle(Color.BLUE, 10, 20);
         System.out.println(r1.getArea());
         System.out.println(r1.getPerimeter());
@@ -40,6 +43,14 @@ public class TestShape {
         System.out.println(s1.getPerimeter());
         // but cannot access getLength and getWidth 
         
+    }
+
+    public static void callColor() {
+        // access constant inside an enum
+        Color[] array = Color.values();
+        for (Color i: array) {
+            System.out.println(i + " at index: " + i.ordinal());
+        }
     }
 
    

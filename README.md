@@ -251,4 +251,7 @@ switch (variable) {
 - Enum type: specifically listed. the enum declaration defines an enum type, which is a special data type and consist of a set of predeine constants separated by comma.
 - enum neither inherit other classes nor can get extended.
 - enum is a class type. altho we dont need to instantiate an enum.
+- can also access element of enum by using enumName.elementName and by index.
+    .ordinal() -- return index of the constant inside the enum class
+- cannot access enum constructor cuz its private by default
 
