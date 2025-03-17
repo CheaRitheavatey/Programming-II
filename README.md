@@ -247,3 +247,8 @@ switch (variable) {
 - abstract keyword is a non-access modifier, used for classes and method.
 - abtract method have no implementation and abstract method can only take abstract class
 
+
+- Enum type: specifically listed. the enum declaration defines an enum type, which is a special data type and consist of a set of predeine constants separated by comma.
+- enum neither inherit other classes nor can get extended.
+- enum is a class type. altho we dont need to instantiate an enum.
+

@@ -7,7 +7,7 @@ public class Rectangle extends Shape{
    private double length;
 
    // constructor
-   Rectangle(String color, double width, double length) {
+   Rectangle(Color color, double width, double length) {
     super(color);
     this.width = width;
     this.length = length;
