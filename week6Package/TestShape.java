@@ -49,6 +49,15 @@ public class TestShape {
         System.out.println(c1.getArea());
         System.out.println(c1.getPerimeter());
         System.out.println(c1.getColor());
+
+
+        // test triangle shape
+        Triangle t1 = new Triangle(Color.PURPLE, 3,5,4);
+        System.out.println(t1.getArea());
+        System.out.println(t1.getPerimeter());
+        System.out.println(t1.getColor());
+
+
         
     }
 
