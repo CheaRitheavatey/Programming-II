@@ -52,10 +52,13 @@ public class TestShape {
 
 
         // test triangle shape
-        Triangle t1 = new Triangle(Color.PURPLE, 3,5,4);
+        Triangle t1 = new Triangle(Color.PURPLE, 5,5,5);
         System.out.println(t1.getArea());
         System.out.println(t1.getPerimeter());
         System.out.println(t1.getColor());
+        System.out.println(t1.isEquilateral());
+        System.out.println(t1.isScalene());
+        System.out.println(t1.isIsocesles());
 
 
         

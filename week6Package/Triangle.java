@@ -33,6 +33,8 @@ public class Triangle extends Shape{
        return this.x + this.y + this.z;
     }
 
+    // getter setter
+
     public double getX() {
         return this.x;
     }
@@ -53,6 +55,17 @@ public class Triangle extends Shape{
     }
     public void setZ(double z) {
         this.z = z;
+    }
+
+    public boolean isEquilateral() {
+        return this.x == this.y && this.y == this.z;
+    }
+
+    public boolean isIsocesles() {
+        return this.x == this.y || this.x == this.z || this.y == this.z;
+    }
+    public boolean isScalene() {
+        return this.x != this.y && this.y != this.z;
     }
 
 }
