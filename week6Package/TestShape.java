@@ -42,6 +42,13 @@ public class TestShape {
         System.out.println(s1.getArea());
         System.out.println(s1.getPerimeter());
         // but cannot access getLength and getWidth 
+
+
+        // testing circle shape
+        Circle c1 = new Circle(Color.PURPLE, 12);
+        System.out.println(c1.getArea());
+        System.out.println(c1.getPerimeter());
+        System.out.println(c1.getColor());
         
     }
 

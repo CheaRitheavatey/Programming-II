@@ -1,5 +1,8 @@
 package week4Package;
-import week5projectClass.*;
+
+import java.util.Arrays;
+
+import javax.swing.SpinnerDateModel;
 
 public class MainClass {
     public static void main(String[] args) {
@@ -43,10 +46,13 @@ public class MainClass {
             either by passing all field values
             or passing nothing
         */
+        getallSpecialization();
+        System.out.println();
         
-        Member memberOne = new Member("Jack", 25, "Computer Scientist");
+        Member memberOne = new Member("Jack", 25, Specialization.TEACHER);
         Member memberTwo = new Member();
         
+        System.out.println(memberOne.getSpecialization());
         memberOne.setAge(30);
         
         
@@ -84,6 +90,17 @@ public class MainClass {
         System.out.println(projectTwo);
         
         
+    }
+
+    // create a method to give a list of all specialization
+    public static void getallSpecialization() {
+        Specialization[] special = Specialization.values();
+        System.out.println(Arrays.toString(special)); // print as a array list
+
+
+        // for (Specialization i: special) {
+        //     System.out.println(i + " index " + i.ordinal());
+        // }
     }
     
 }

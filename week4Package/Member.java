@@ -4,13 +4,13 @@ public class Member {
     
     private String name;
     private int age;
-    private String specialization;
+    private Specialization specialization;
     
     public Member(){
         
     }
     
-    public Member(String name, int age, String specialization) {
+    public Member(String name, int age, Specialization specialization) {
         this.name = (!name.trim().equals("")) ? name.trim() : "Unknown";
         this.age = age;
         this.specialization = specialization;
@@ -25,7 +25,7 @@ public class Member {
         return this.age;
     }
     
-    public String getSpecialization() {
+    public Specialization getSpecialization() {
         return this.specialization;
     }
     
