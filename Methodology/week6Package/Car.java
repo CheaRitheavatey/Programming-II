@@ -19,12 +19,12 @@ public class Car extends Vehicle {
     }
     @Override
     public void startEngine() {
-        throw new UnsupportedOperationException("starting the car engine");
+        System.out.println("starting car engine");
     }
 
     @Override
     public void accelerate() {
-        throw new UnsupportedOperationException("accelerating the car");
+        System.out.println("accelerate car");
     }
 
     
