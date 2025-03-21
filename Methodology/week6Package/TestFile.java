@@ -21,6 +21,14 @@ public class TestFile {
 
         System.out.println();
         allVehicleType();
+
+        System.out.println("for motorcycle");
+        Motorcycle m = new Motorcycle("motor brand", 2);
+        m.displayInfo();
+
+        System.out.println("for bicycle");
+        Bicycle b = new Bicycle("giant", 2, 2);
+        b.displayInfo();
         
 
     }
