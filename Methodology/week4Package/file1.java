@@ -50,6 +50,8 @@ class Car {
 }
 public class file1 {
     public static void main(String[] args) {
+
+        
         Car[] car = new Car[2];
         car[0] = new Car(56, 3, "Toyota", "red");
         car[1] = new Car();
@@ -70,5 +72,15 @@ public class file1 {
 
         }
 
+        printGenre();
+
+    }
+
+    public static void printGenre() {
+        // print avaliable genre to cosole
+        Genre[] g = Genre.values();
+        for (Genre i: g) {
+            System.out.println(i);
+        }
     }
 }

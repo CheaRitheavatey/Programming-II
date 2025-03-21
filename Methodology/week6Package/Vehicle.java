@@ -4,9 +4,9 @@ package Methodology.week6Package;
 // represent a general vehicle and define the rules
 public abstract class Vehicle {
     // data field
-    protected String brand;
-    protected int year;
-    protected VehicleType vehicleType; // we make it protected cuz we want to access it in the child class
+    private String brand;
+    private int year;
+    private VehicleType vehicleType; // we make it protected cuz we want to access it in the child class
     
 
     // constructor

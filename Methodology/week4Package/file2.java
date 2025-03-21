@@ -10,7 +10,7 @@ class Book {
     private String publisher;
 
     private static int numberOfBooks;
-    private String genre;
+    private ArrayList<Genre> genre = new ArrayList<>();
 
     // constructor
     Book(String title, String author, String publisher) {
@@ -72,15 +72,18 @@ class Book {
     }
 
 
-    public String getGenre() {
-        return genre;
+    public ArrayList<Genre> getGenre() {
+        return this.genre;
     }
 
 
-    public void setGenre(String genre) {
+    public void setGenre(Genre genre) {
         this.genre = genre;
     }
 
+    // public void addGenre() {
+    //     return this.genre.add(Genre);
+    // }
     public static int getNumberOfBooks() {
         return numberOfBooks;
     }
@@ -106,7 +109,7 @@ public class file2 {
         System.out.println(mylist);
 
         // add genre of book title 1
-        mylist.get(0).setGenre("sci-fi");
+        mylist.get(0).setGenre(Genre.FICTION);
         System.out.println(Book.getNumberOfBooks()); 
 
 

@@ -1,33 +1,35 @@
 package Methodology.week6Package;
 
+import week6Package.Color;
+
 public abstract class Pet {
     // data field
-    private String name;
-    private String color;
+    private Specices name;
+    private Color color;
     private int age;
 
     //constructor
-    Pet(String name, int age, String color) {
+    Pet(Specices name, int age, Color color) {
         this.name = name;
         this.age = age;
         this.color = color;
     }
 
     // getter and setter
-    public void setName(String name) {
+    public void setName(Specices name) {
         this.name = name;
     }
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
     public void setAge(int age) {
         this.age = age;
     }
 
-    public String getName() {
+    public Specices getName() {
         return this.name;
     }
-    public String getColor() {
+    public Color getColor() {
         return this.color;
     }
     public int getAge() {
