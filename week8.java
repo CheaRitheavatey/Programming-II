@@ -4,12 +4,9 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
-import Methodology.week4Package.file1;
 
 public class week8 {
     public static void example1() {
@@ -69,6 +66,7 @@ public class week8 {
         }
         
     }
+
     public static void example4() throws Exception{
         //autocloseable
         try 
@@ -102,12 +100,37 @@ public class week8 {
                 pr.append("printwriter append");
             }
     }
+
+    // check if the num is positive or not
+    public static void example6(int num) {
+        if (num < 0) {
+            throw new IllegalArgumentException("number must be positive");
+        } else {
+            System.out.println(num + " is positive ");
+            
+        }
+    }
+
+    public static void withdraw(int balance, int withdrawAmount) {
+        if (balance < withdrawAmount) {
+            throw new IllegalArgumentException("Withdraw cannot be less than main balance");
+        }
+        balance -= withdrawAmount;
+        System.out.println("Succesfully withdraw");
+        System.out.println("Current balance: " + balance);
+    }
     public static void main(String[] args) throws Exception {
         // example1();
         // example2();
         // example3();
         // example4();
-        example5();
+        // example5();
+        // example6(-9);
+        try {
+            withdraw(1000, 10);
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
     }
     
 }

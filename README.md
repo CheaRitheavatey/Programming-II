@@ -324,3 +324,15 @@ week 8: error handling
 - how to delete a file?
     - File file = new File("filename.txt");
     - file.delete();
+
+- throw vs throws:
+    - exception is alwas thrown with a throw statement
+        example,
+        throw new Exception("error message");
+        - and we can handle it like this:
+        try {
+            throw new Exception("error message");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    - throwable object are instances of any subclass of the throwable class
