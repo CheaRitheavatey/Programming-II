@@ -8,6 +8,12 @@ import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+// create a InvalidAgeException class to handle the exception
+class InvalidAgeException extends RuntimeException{
+    InvalidAgeException(String i) {
+        super(i);
+    }
+}
 public class week8 {
     public static void example1() {
         try {
@@ -119,6 +125,40 @@ public class week8 {
         System.out.println("Succesfully withdraw");
         System.out.println("Current balance: " + balance);
     }
+
+    public static void getArrayItem(int[] arr) {
+        Scanner scanner = new Scanner(System.in);
+        try {
+            int a = scanner.nextInt();
+            System.out.println(arr[a]);
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println(e.getMessage());
+        } catch (InputMismatchException e) {
+            System.out.println(e.getMessage());
+        }
+        scanner.close(); 
+    }
+
+    public static void dvidie(int a, int b) {
+        if (b == 0) {
+            ArithmeticException myexception = new ArithmeticException("top layer exception");
+            myexception.initCause(new IOException("Second layer"));
+
+            throw myexception;
+        }
+
+        System.out.println(a/b);
+    }
+
+    public static void checkAge(int age){
+        if (age < 13) {
+            // IOException i = new IOException("Top layer");
+            // creating our own exception
+            throw new InvalidAgeException("Must be older than 18");
+        } else {
+            System.out.println("You ar Eligible");
+        }
+    }
     public static void main(String[] args) throws Exception {
         // example1();
         // example2();
@@ -126,10 +166,41 @@ public class week8 {
         // example4();
         // example5();
         // example6(-9);
+        // try {
+        //     withdraw(1000, 10);
+        // } catch (IllegalArgumentException e) {
+        //     System.out.println(e.getMessage());
+        // }
+        // try {
+        //     int[] arr = {15,3,2,0};
+        //     getArrayItem(arr);
+
+        //     String a = null;
+        //     System.out.println(a.length());
+        // } catch (IllegalArgumentException e) {
+        //     System.out.println(e.getMessage());
+        // } catch (NullPointerException e) {
+        //     System.out.println(e.getMessage());
+        // }
+
+
+        // try {
+        //     int c = 1000/0;
+        //     System.out.println(c);
+        // } catch (ArithmeticException e) {
+        //     System.out.println(e.getMessage());
+        // }
         try {
-            withdraw(1000, 10);
-        } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
+            dvidie(100, 0);
+        } catch (ArithmeticException a) {
+            System.out.println("Caught: " + a);
+            System.out.println("Cause: " + a.getCause());
+        }
+        try {
+            checkAge(13);        } 
+        catch (InvalidAgeException a) {
+            System.out.println("Caught: " + a.getMessage());
+            System.out.println("Cause: " + a.getCause());
         }
     }
     

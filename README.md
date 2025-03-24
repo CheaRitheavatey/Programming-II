@@ -336,3 +336,5 @@ week 8: error handling
             System.out.println(e.getMessage());
         }
     - throwable object are instances of any subclass of the throwable class
+
+    - check exception: 
