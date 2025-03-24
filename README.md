@@ -255,3 +255,72 @@ switch (variable) {
     .ordinal() -- return index of the constant inside the enum class
 - cannot access enum constructor cuz its private by default
 
+week 8: error handling
+- exception: an event which occur during execution of a program. when eception is not handle the runtime system and the program will terminate.
+- try-catch block: used to handle exception
+    - can use many catch block but have to put the specific one in the begining and the general in the end
+    - Throwable class is the parent class of all exception
+- throw: used to throw exception
+- finally: used to execute code after the try-catch block
+    - try doesnt need to have catch as long as it have finally clause
+
+
+- file:
+    - FileReader f = new FileReader("filename.txt");
+
+    - to read a file: 
+    f.read();
+
+    - to close a file:
+    f.close();
+
+    - to write a file:
+    FileWriter f = new FileWriter("filename.txt");
+    f.write("hello world");
+
+    - autocloseable is not a class but an interface (like in example4)
+    - if use exception no need to use try-catch block
+
+- how to read 1 line in file?
+    - BufferedReader b = new BufferedReader(new FileReader("filename.txt"));
+    - b.readLine();
+
+- how to read everything in file?
+    - BufferedReader b = new BufferedReader(new FileReader("filename.txt"));
+    - String line = b.readLine();
+    - while (line != null) {
+        System.out.println(line);
+        line = b.readLine();
+    }
+    - b.close();
+
+- how to continue write into a file?
+    - FileWriter f = new FileWriter("filename.txt", true);
+    - f.write("hello world");
+    - f.close();
+
+- how to continue write but in a new line?
+    - FileWriter f = new FileWriter("filename.txt", true);
+    - f.write("\nhello world");
+
+- how to copy content from one file to another?
+    - BufferedReader b = new BufferedReader(new FileReader("filename.txt"));
+    - FileWriter f = new FileWriter("filename2.txt");
+    - String line = b.readLine();
+    - while (line != null) {
+        f.write(line);
+        line = b.readLine();
+    }
+
+- how to copy content from one file to another but in a new line?
+    - BufferedReader b = new BufferedReader(new FileReader("filename.txt"));
+    - FileWriter f = new FileWriter("filename2.txt");
+    - String line = b.readLine();
+    - while (line != null) {
+        f.write(line + "\n");
+        line = b.readLine();
+    }
+
+- how to delete a file?
+    - File file = new File("filename.txt");
+    - file.delete();
