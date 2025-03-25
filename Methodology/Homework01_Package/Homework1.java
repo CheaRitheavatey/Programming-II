@@ -1,4 +1,4 @@
-package Methodology.Homework01_Package;
+package week4Package;
 
 public class Homework1 {
     public static void main(String[] args ) {
