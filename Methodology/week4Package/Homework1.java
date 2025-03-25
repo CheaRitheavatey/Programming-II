@@ -1,4 +1,6 @@
-package week4Package;
+package Methodology.week4Package;
+
+import Methodology.Homework01_Package.Chat;
 
 public class Homework1 {
     public static void main(String[] args ) {
