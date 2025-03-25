@@ -29,11 +29,12 @@ public class Chat {
     // data field
     private String name;
 
+    // constrcutor
     public Chat(String name) {
         this.name = name;
     }
 
-    // getter
+    // getter, no need setter because why would user reset the name?
     public String getName() {
         return this.name;
     }
