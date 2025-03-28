@@ -338,3 +338,23 @@ week 8: error handling
     - throwable object are instances of any subclass of the throwable class
 
     - check exception: 
+- collection have some method like
+    - add() to add element
+    - remove() to remove element
+    - get() to get element
+    - size() to get size
+    - addAll() to add all element
+    - shuffle() to shuffle element
+    - sort() to sort element
+
+    for example,
+    ArrayList<String> list = new ArrayList<>();
+    list.add("a");
+    list.add("b");
+    list.add("c");
+    list.add("d");
+    list.add("e");
+
+    list.remove(2);
+    list.shuffle();
+    list.sort();

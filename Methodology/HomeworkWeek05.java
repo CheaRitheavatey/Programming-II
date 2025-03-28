@@ -63,11 +63,7 @@ public class HomeworkWeek05 {
         
     }
     public static void main(String[] args) {
-        try {
-            rollDice();
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
+        rollDice();
         /*
            create a method to roll the dice 
            and ask the user to guess the number on the dice
