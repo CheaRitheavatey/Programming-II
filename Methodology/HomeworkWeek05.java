@@ -3,41 +3,43 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class HomeworkWeek05 {
-    public static void rollDice() throws Exception {
-        // ask user to guess number
+    public static void rollDice() {
+        // first random guess using Random
         Random random = new Random();
         int rand = random.nextInt(1,7);
-        // System.out.println(rand);
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("You can exit the game by entering: exit\r\n" + "Game Started: ");
 
         while (true) {
             try {
+                // take in user input
                 System.out.print("Guess the number showing on the dice: ");
                 String guess = scanner.next();
-                // System.out.println(guess);
 
+
+                // exit if user type exit
                 if (guess.toLowerCase().equals("exit")) {
-                    System.out.println(" You gave up! dice was showing " + rand + " !");
+                    System.out.println("You gave up! dice was showing " + rand + " !");
                     break;
                 } 
 
+                // dice should be range between 1-6
                 if (Integer.parseInt(guess) < 7 && Integer.parseInt(guess) > 0) {
 
                     if (Integer.parseInt(guess) == rand) {
                         System.out.println("You guessed correct!");
     
     
-                        System.out.println("Do you want to continue? (y/n): ");
+                        System.out.print("Do you want to continue? (y/n): ");
                         String again = scanner.next();
     
-                        if (again.toLowerCase().equals("n")) {
+                        if (again.toLowerCase().equals("n") || again.toLowerCase().equals("exit")) {
                             System.out.println("You are exiting the game, Good Bye!");
                             break;
                         }
     
                         rand = random.nextInt(1,7);
-                        System.out.println(rand);
                         continue;
                         
                     }
@@ -54,7 +56,10 @@ public class HomeworkWeek05 {
             }
 
 
+
+
         }
+        scanner.close();
         
     }
     public static void main(String[] args) {
