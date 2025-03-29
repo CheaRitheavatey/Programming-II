@@ -13,7 +13,7 @@ public class HW2 {
        
 
         String moodNow = moodList[ ran.nextInt(0,moodList.length)];
-        System.out.println(moodNow);
+        // System.out.println(moodNow);
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Game started!");
