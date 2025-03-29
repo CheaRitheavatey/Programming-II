@@ -88,20 +88,21 @@ import java.util.Scanner;
 public class Homework03 {
     public static void input(Scanner scanner) throws IOException {
         // ask for name 
-        System.out.print("Name: ");
-        String name = scanner.next();
-
-        if (name.length() < 2) 
-            throw new IOException("Name is too short.");
-        
-        System.out.print("Year: ");
-        int year = scanner.nextInt();
         try {
-            if (year < 1900 || year > 2025) 
+            System.out.print("Name: ");
+            String name = scanner.next();
+            if (name.length() < 3) 
+                throw new IOException("Name is too short.");
+            
+            System.out.print("Year: ");
+            String year = scanner.next();
+        
+            int years = Integer.parseInt(year);
+            if (years < 1900 || years > 2025) 
                 throw new IOException("Birth year is invalid.");
         } catch (NumberFormatException e) {
-            System.out.println(e.getMessage());
-        }
+            throw new IOException(e.getMessage());
+        } 
         
         System.out.println("Information entered successfully");
     }
@@ -110,7 +111,7 @@ public class Homework03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         while (true) {
-            System.out.print("type anything to continue or type exit to quit! ");
+            System.out.print("Type anything to continue or type exit to quit! ");
             String sth = scanner.next();
 
             if (sth.toLowerCase().equals("exit"))
@@ -118,8 +119,6 @@ public class Homework03 {
             try {
                 input(scanner);
                 break;
-            } catch (NumberFormatException e) {
-                System.out.println(e.getMessage());
             } catch (IOException e) {
                 System.out.println(e.getMessage());
             } catch (InputMismatchException e) {
