@@ -14,7 +14,6 @@ import java.util.Scanner;
 
 
 // If the user enters a name which has less than 2 characters, an IOException should be thrown with message:
-
 // "Name is too short."
 
 
@@ -87,58 +86,47 @@ import java.util.Scanner;
 // BUILD SUCCESSFU
 
 public class Homework03 {
-    public
+    public static void input(Scanner scanner) throws IOException {
+        // ask for name 
+        System.out.print("Name: ");
+        String name = scanner.next();
+
+        if (name.length() < 2) 
+            throw new IOException("Name is too short.");
+        
+        System.out.print("Year: ");
+        int year = scanner.nextInt();
+        try {
+            if (year < 1900 || year > 2025) 
+                throw new IOException("Birth year is invalid.");
+        } catch (NumberFormatException e) {
+            System.out.println(e.getMessage());
+        }
+        
+        System.out.println("Information entered successfully");
+    }
+    
+     
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         while (true) {
-            System.out.print("Type anything to continue or type exit to quit: ");
-            String x = scanner.next();
+            System.out.print("type anything to continue or type exit to quit! ");
+            String sth = scanner.next();
 
-            if (x.toLowerCase().equals("exit")) {
+            if (sth.toLowerCase().equals("exit"))
                 break;
-            }
-            
-            // Consume the newline character left by next()
-            // scanner.nextLine(); 
-            
             try {
-                System.out.print("Name: ");
-                String name = scanner.next();
-
-                if (name.length() < 2) {
-                    throw new IOException("Name is too short.");
-                }
-
-                System.out.print("Year: ");
-                String year = scanner.next();
-
-                try {
-
-                    if (Integer.parseInt(year) < 1900 || Integer.parseInt(year) > 2025) {
-                        throw new IOException("Birth year is invalid.");
-                    }
-                    continue;
-                } catch (NumberFormatException e) {
-                    System.out.println(e.getMessage());
-                }
-                
-                continue;
-                
-            if (name.length() > 2 && (Integer.parseInt(year) > 1900 || Integer.parseInt(year) < 2025) ) {
-                System.out.println("Information entered successfully.");
+                input(scanner);
                 break;
-            }
-                
-                
+            } catch (NumberFormatException e) {
+                System.out.println(e.getMessage());
             } catch (IOException e) {
                 System.out.println(e.getMessage());
-            } catch (InputMismatchException d) {
-                System.out.println(d.getMessage());
-            } 
+            } catch (InputMismatchException e) {
+                System.out.println(e.getMessage());
+            }
         }
-
-        scanner.close();
+    
 
     }
 }
