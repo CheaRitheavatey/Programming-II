@@ -372,3 +372,60 @@ week 8: error handling
     read and write unicode character
     BufferedInputStream f = new BufferedInputStream(new FileInputStream("filename.txt"));
     BufferedOutputStream f = new BufferedOutputStream(new FileOutputStream("filename.txt"));
+
+    - if file not exist create it
+    FileOutputStream f = new FileOutputStream("filename.txt");
+
+
+- File
+    - Description: The File class is used to represent file and directory pathnames in an abstract manner. It does not directly handle file content.
+    - Use Cases:
+        - Check if a file exists.
+        - Get file metadata (size, path, etc.).
+        - Create, delete, or rename files.
+
+    - operator: 
+        - exists(): Checks if the file exists.
+        - createNewFile(): Creates a new file if it does not exist.
+        - delete(): Deletes the file or directory.
+        - getName(): Returns the name of the file or directory.
+        - length(): Returns the size of the file in bytes.
+        - readAllLines(): Reads all lines of a file into a list of strings.
+
+
+
+- FileReader
+    - Description: when you need to manipulate files and directories (check existence, get metadata, etc.).
+    
+    A FileReader is a bridge from byte streams to character streams, allowing you to read text files easily.
+    - Use Cases:
+        - Reading character data from a text file.
+        - Useful when you need to read text files in a character encoding (like UTF-8).
+
+    - operator:
+        - read(): Reads a single character from the file.
+        - read(char[] cbuf): Reads characters into a buffer.
+        - write(int c): Writes a single character to the file.
+        - write(char[] cbuf): Writes a character array to the file.
+        - flush(): Flushes the stream, ensuring all data is written out.
+        - close(): Closes the stream.
+
+
+- FileWriter
+    - Description: A FileWriter is used to write character data to a file.
+    - Use Cases:
+        - Writing text data to a file.
+        - Can append to existing files or create new ones.
+
+
+- FileInputStream
+    - Description: A FileInputStream is used to read raw byte data from a file.
+    - Use Cases:
+        - Reading binary files (like images, audio files, etc.).
+        - Useful when you need to process non-text data.
+
+- FileOutputStream
+    - Description: A FileOutputStream is used to write raw byte data to a file.
+    - Use Cases:
+        - Writing binary data to a file.
+        - Useful for saving files that are not text-based.
