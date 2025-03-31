@@ -358,3 +358,17 @@ week 8: error handling
     list.remove(2);
     list.shuffle();
     list.sort();
+
+- Basic I/O
+    - read and write data by using java.io.package class
+    - input stream = read data from a source, on item at a time
+    - output stream = write data to destination, one item at a time
+
+    - Example, 
+    read and write bytes
+    FileInputStream f = new FileInputStream("filename.txt");
+    FileOutputStream f = new FileOutputStream("filename.txt");
+
+    read and write unicode character
+    BufferedInputStream f = new BufferedInputStream(new FileInputStream("filename.txt"));
+    BufferedOutputStream f = new BufferedOutputStream(new FileOutputStream("filename.txt"));

@@ -9,10 +9,22 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 // create a InvalidAgeException class to handle the exception
+
+// if we extends Exception or RuntimeException it will behave differetly
+// if we extends RuntimeException we dont have to throws in the method that we're gonna use the custom but 
+// if we extends Exception we have to use 'throws' or add in a try-catch block
 class InvalidAgeException extends RuntimeException{
     InvalidAgeException(String i) {
         super(i);
     }
+}
+
+// create a custom exception for insufficient fund, the exception should require a message
+class InsufficientException extends IllegalArgumentException {
+    InsufficientException(String i) {
+        super(i);
+    }
+    
 }
 public class week8 {
     public static void example1() {
@@ -119,7 +131,7 @@ public class week8 {
 
     public static void withdraw(int balance, int withdrawAmount) {
         if (balance < withdrawAmount) {
-            throw new IllegalArgumentException("Withdraw cannot be less than main balance");
+            throw new InsufficientException("Withdraw cannot be less than main balance");
         }
         balance -= withdrawAmount;
         System.out.println("Succesfully withdraw");
@@ -166,11 +178,11 @@ public class week8 {
         // example4();
         // example5();
         // example6(-9);
-        // try {
-        //     withdraw(1000, 10);
-        // } catch (IllegalArgumentException e) {
-        //     System.out.println(e.getMessage());
-        // }
+        try {
+            withdraw(1, 10);
+        } catch (InsufficientException e) {
+            System.out.println(e.getMessage());
+        }
         // try {
         //     int[] arr = {15,3,2,0};
         //     getArrayItem(arr);
@@ -190,18 +202,18 @@ public class week8 {
         // } catch (ArithmeticException e) {
         //     System.out.println(e.getMessage());
         // }
-        try {
-            dvidie(100, 0);
-        } catch (ArithmeticException a) {
-            System.out.println("Caught: " + a);
-            System.out.println("Cause: " + a.getCause());
-        }
-        try {
-            checkAge(13);        } 
-        catch (InvalidAgeException a) {
-            System.out.println("Caught: " + a.getMessage());
-            System.out.println("Cause: " + a.getCause());
-        }
+        // try {
+        //     dvidie(100, 0);
+        // } catch (ArithmeticException a) {
+        //     System.out.println("Caught: " + a);
+        //     System.out.println("Cause: " + a.getCause());
+        // }
+        // try {
+        //     checkAge(13);        } 
+        // catch (InvalidAgeException a) {
+        //     System.out.println("Caught: " + a.getMessage());
+        //     System.out.println("Cause: " + a.getCause());
+        // }
     }
     
 }
