@@ -14,9 +14,8 @@ public class week9 {
             out = new FileOutputStream("week9File.txt");
             // .read() will return -1 when end of the file has been reach
 
-            int x = in.read();
-            while (x != -1) {
-                out.write(x);
+            while (in.read() != -1) {
+                out.write(in.read());
             }
             // return a byte    .read()
         } finally {
@@ -38,9 +37,9 @@ public class week9 {
             out = new FileWriter("week9File.txt");
             // .read() will return -1 when end of the file has been reach
 
-            // int x = in.read();
-            while (in.read() != -1) {
-                out.write(in.read());
+            int x = in.read();
+            while (x != -1) {
+                out.write(x);
             }
             // return a byte    .read()
         } finally {
@@ -52,7 +51,9 @@ public class week9 {
         }
 
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException{
+        // fileInput();
+        unichar();
         
     }
 }
