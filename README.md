@@ -429,3 +429,8 @@ week 8: error handling
     - Use Cases:
         - Writing binary data to a file.
         - Useful for saving files that are not text-based.
+
+
+- .canRead() and .canWrite() check if the file can be read or write
+- .readable() and .writable() check if the file can be read or write
+- file.lastModified() to get the last modified time

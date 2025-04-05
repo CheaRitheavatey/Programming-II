@@ -1,12 +1,45 @@
 package w3resource;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
 public class Practice {
+    
+    public static void transpose2DArray(int[][] array) {
+        int[][] newarr = new int[array[0].length][array.length];
+        // given
+        // 10 20 30
+        // 40 50 60 
+
+        // change to
+        // 10 40
+        // 20 50
+        // 30 60
+
+        for (int i = 0; i< array.length; i++) {
+            for (int j = 0 ; j < array[0].length ; j++) {
+                newarr[j][i] = array[i][j];
+            
+                
+            }
+            System.out.println();
+        }
+
+        for (int i = 0; i<newarr.length; i++) {
+            for (int j = 0; j <newarr[0].length;j++) {
+                System.out.print(newarr[i][j]+ " ");
+            }
+
+            System.out.println();
+        }
+
+       
+        
+
+       
+    }
     // count words and vowels that is input and how many vowel in total
     public static void countWordsAndVowel() {
         Scanner scanner = new Scanner(System.in);
@@ -40,7 +73,11 @@ public class Practice {
 
     }
     public static void main(String[] args) {
-        countWordsAndVowel();
+        // countWordsAndVowel();
+        int[][] arr = {
+            {1,2,3},
+            {4,5,6}};
+        transpose2DArray(arr);
         
     }
 }

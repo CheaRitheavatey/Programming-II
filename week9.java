@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -13,6 +14,27 @@ import java.util.Collections;
 import java.util.List;
 
 public class week9 {
+    public static void exercise7(Path path) throws IOException{
+        // get specific file extension
+        // if (!Files.exists(path)) {
+        //     throw new FileNotFoundException("");
+        // }
+
+        if (!path.toString().toLowerCase().endsWith(".java")) {
+            throw new IOException("doesnt end with .java");
+        }
+
+        System.out.println("Complete!");
+
+    }
+    public static void exercise6() {
+        // get a list of file name in the given directory
+        File f= new File("/home/students/");
+        String[] filelist = f.list();
+        for (String name: filelist) {
+            System.out.println(name);
+        }
+    }
     public static void fileInput() throws IOException{
         FileInputStream in = null; // to read file
         FileOutputStream out = null; // to write
@@ -176,7 +198,13 @@ public class week9 {
         // unichar();
         // path();
         // example1(Paths.get("week8File.txt"));
-        example2(Paths.get("week8File.txt"), "value");
+        // example2(Paths.get("week8File.txt"), "value");
+
+        try {
+            exercise7(Paths.get("week9.java"));
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
         
     }
 }

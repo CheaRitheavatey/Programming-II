@@ -1,8 +1,10 @@
 package w3resource;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -11,8 +13,34 @@ import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Filehandling {
+    public static void exercise9(Path path) throws IOException{
+        // read the first 3 lines of file
+        try (BufferedReader reader = new BufferedReader(new FileReader(path.toString()))) {
+            String line; 
+            int count = 0;
+            while ((line = reader.readLine()) != null && count < 3) {
+                System.out.println(line);
+                count++;
+            }
+        } 
+    }
+    public static void exercise8(Path path) {
+        // read from console and add it to file
+        try (FileWriter writer = new FileWriter(path.toString(),true);
+            Scanner scanner = new Scanner(System.in)) {
+                
+                System.out.print("Enter: ");
+                String input = scanner.nextLine();
+                writer.write(input + System.lineSeparator());
+            } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+
+        
+    }
     public static void example4(Path path) throws IOException {
         Random ran = new Random();
         List<String> numbers = new ArrayList<>();
@@ -90,7 +118,8 @@ public class Filehandling {
         // exercise2(Paths.get("week8File.txt"), Paths.get("week9File.txt"));
         // System.out.println(countCharacters("week8File.txt" ));
         
-        example3("week8File.txt", "Value","Hello");
+        // example3("week8File.txt", "Value","Hello");
+        exercise9(Paths.get("week8File.txt"));
     }
     
 }
