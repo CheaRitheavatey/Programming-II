@@ -10,7 +10,7 @@ class Book {
     private String publisher;
 
     private static int numberOfBooks;
-    private ArrayList<Genre> genre = new ArrayList<>();
+    private Genre genre = new ArrayList<>();
 
     // constructor
     Book(String title, String author, String publisher) {
