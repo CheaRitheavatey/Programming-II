@@ -60,8 +60,9 @@ public class Homework09 {
         
         // shuffle char
         Collections.shuffle(charc);
+
+        // put all char together into one string
         String str = "";
-        // StringBuilder str = new StringBuilder();
         for (char c: charc) {
             str += c;
         }
