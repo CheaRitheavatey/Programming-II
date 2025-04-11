@@ -1,0 +1,16 @@
+<classes>
+    <name>Methodology of Programming II</name>
+    <students>
+    <!--comment-->
+        <student neptun = "12AB34">
+            <firstname>Tom</firstname>
+            <lastname>Black</lastname>
+            <mark>95</mark>
+        </student>
+        <student neptun = "12AB34">
+            <firstname>Jessica</firstname>
+            <lastname>Perri</lastname>
+            <mark>100</mark>
+        </student>
+    </students>
+</classes>
