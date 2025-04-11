@@ -434,3 +434,16 @@ week 8: error handling
 - .canRead() and .canWrite() check if the file can be read or write
 - .readable() and .writable() check if the file can be read or write
 - file.lastModified() to get the last modified time
+
+
+- xml: processing
+    extensible markup language
+    is tag based similar to html
+    can define your own tags
+    element are case sensitive
+    reserve word "XML" in all case
+    xml name must start with letter or underscore and cannot contain white space
+
+
+- JAXP is for processing xml 
+- xml parser give way to access or modfiy data: commonly use are DOM, SAX, JDOM StAX, JAXB
