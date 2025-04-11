@@ -219,9 +219,9 @@ public class week10 {
     public static void main(String[] args) throws SAXException, IOException {
         // readFirstStudent();
         // readStudents();
-        // editxml();
+        editxml();
 
-        createxml();
+        // createxml();
 
         // how to write from xml to txt
     }
