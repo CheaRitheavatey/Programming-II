@@ -3,6 +3,7 @@ package Methodology.week10Package;
 import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 import javax.xml.parsers.*;
+import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
@@ -79,7 +80,7 @@ public class week10 {
             // create a new instance just like how you said its String str= new String its just this is a different form
             DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
             DocumentBuilder db = dbf.newDocumentBuilder();
-            Document doc = db.parse("1.xml");
+            Document doc = db.parse("edited1.xml");
 
             doc.normalize();
 
@@ -93,6 +94,27 @@ public class week10 {
             Node nodeAtrri = attri.getNamedItem("neptun");
             nodeAtrri.setTextContent("New1234");
 
+            // update elment
+            NodeList studentList = doc.getElementsByTagName("student");
+            for (int i = 0; i< studentList.getLength(); i++) {
+                Node n = studentList.item(i);
+
+                // look for a certain info and modify it
+                NodeList studentchild = n.getChildNodes();
+                for (int j = 0; j< studentchild.getLength(); j++) {
+                    Node child = studentchild.item(i);
+                    if (child.getNodeType() == Node.ELEMENT_NODE) {
+                        Element childElement = (Element) child;
+
+                        if (childElement.getNodeName().equals("mark")) {
+                            if (childElement.getTextContent().equals("100")) {
+                                childElement.setTextContent("Excellent");
+                            }
+                        }
+                    }
+                }
+
+            }
             // writing to a target
             TransformerFactory tf = TransformerFactory.newInstance();
             Transformer t = tf.newTransformer();
@@ -101,10 +123,10 @@ public class week10 {
             DOMSource source = new DOMSource(doc);
 
             // see the change in console/terminal
-            // StreamResult target = new StreamResult(System.out);
+            StreamResult target = new StreamResult(System.out);
 
             // see the change in the same but i dont want to modify the original file so lets put the edited one in a new file
-            StreamResult target = new StreamResult(new File("edited1.xml"));
+            // StreamResult target = new StreamResult(new File("edited1.xml"));
 
             t.transform(source, target);
 
@@ -114,10 +136,92 @@ public class week10 {
         }
     }
 
+    public static void createxml() {
+    
+        try {
+            DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            Document doc = db.newDocument();
+
+            // create element attribute and more ...
+            Element root = doc.createElement("class");
+            doc.appendChild(root); // append everythingto the doc in order for it to show up
+
+            Element name = doc.createElement("name");
+            root.appendChild(name);
+            // add the content into the name tag
+            name.setTextContent("Elementary Programming II");
+
+            Element students = doc.createElement("students");
+            root.appendChild(students);
+
+            Element student = doc.createElement("student");
+            students.appendChild(student);
+            
+            Attr attr = doc.createAttribute("neptun");
+            attr.setValue("123");
+            // add the attribute to the student tag
+            student.setAttributeNode(attr);
+            student.setAttribute("id", "1");
+
+            // we can create comment here also
+            Comment cm = doc.createComment("this is a comment");
+            student.appendChild(cm);
+
+            Element firstname = doc.createElement("firstname");
+            student.appendChild(firstname);
+            firstname.setTextContent("John");
+
+            Element lastname = doc.createElement("lastname");
+            student.appendChild(lastname);
+            lastname.setTextContent("JOE");
+            
+            Element mark = doc.createElement("mark");
+            student.appendChild(mark);
+            mark.setTextContent("100");
+
+            // second student
+            Element student2 = doc.createElement("student");
+            students.appendChild(student2);
+
+            Element firstname2 = doc.createElement("firstname");
+            student2.appendChild(firstname2);
+            firstname2.setTextContent("Alice");
+
+            Element lastname2 = doc.createElement("lastname");
+            student2.appendChild(lastname2);
+            lastname2.setTextContent("ABC");
+            
+            Element mark2 = doc.createElement("mark");
+            student2.appendChild(mark2);
+            mark2.setTextContent("90");
+    
+
+            TransformerFactory tff = TransformerFactory.newInstance();
+            Transformer tf = tff.newTransformer();
+
+            DOMSource source = new DOMSource(doc);
+            StreamResult target = new StreamResult(new File("createxml.xml"));
+            // StreamResult target = new StreamResult(System.out);
+
+            // to make the file pretty and enter properly
+            tf.setOutputProperty(OutputKeys.INDENT, "yes");
+            tf.transform(source, target);
+
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
     public static void main(String[] args) throws SAXException, IOException {
         // readFirstStudent();
         // readStudents();
-        editxml();
+        // editxml();
+
+        createxml();
 
         // how to write from xml to txt
     }
