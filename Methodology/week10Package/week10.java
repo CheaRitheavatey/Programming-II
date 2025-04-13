@@ -83,6 +83,7 @@ public class week10 {
             Document doc = db.parse("edited1.xml");
 
             doc.normalize();
+        
 
             // update an attribute value (attribute = id in html)
             Node student = doc.getElementsByTagName("student").item(0);
