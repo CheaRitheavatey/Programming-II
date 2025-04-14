@@ -447,3 +447,11 @@ week 8: error handling
 
 - JAXP is for processing xml 
 - xml parser give way to access or modfiy data: commonly use are DOM, SAX, JDOM StAX, JAXB
+
+
+- group layout: align component horizontally or verticaly, making it easier to create a visually appealing layout
+
+- create a group layout instance
+GroupLayout layout = new GroupLayout(getContentPane());
+
+.getConentPane() is a method that returns the content pane of the frame
