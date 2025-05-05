@@ -1,9 +1,16 @@
 package GUI;
 
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 public class Week12 {
     public static void main(String[] args) {
@@ -45,12 +52,38 @@ public class Week12 {
         help.add(about);
         menuBar.add(help);
 
-        frame.add(menuBar);
+
+        // create a panel
+        JPanel panel = new JPanel();
+        panel.setPreferredSize(new Dimension(300,300));
+
+        panel.add(menuBar);
+        frame.getContentPane().setLayout(new BorderLayout());
+        frame.getContentPane().add(panel, BorderLayout.SOUTH);
+        frame.getContentPane().add(menuBar, BorderLayout.NORTH);
 
         frame.pack();
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLocationRelativeTo(null);
         
+
+        // add some behavior
+        openItem.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(frame, "Open Item selected");
+            }
+        });
+        saveItem.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(frame, "Save Item selected");
+            }
+        });
+        exitItem.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
         
     }
 }
