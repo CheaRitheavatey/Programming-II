@@ -2,6 +2,8 @@ package Methodology.week13Package;
 
 import java.util.ArrayList;
 
+import Methodology.week6Package.Car;
+
 public class week13 {
     public static void main(String[] args) {
 
@@ -22,6 +24,24 @@ public class week13 {
         Cart<Integer> c1 = new Cart<>();
         c1.sett(12);
         System.out.println(c1.gett());
+
+        Pair<Integer,String> p = new Pair<Integer,String>();
+        p.setKey(1);
+        p.setvalue(johnname);
+
+        Pair<Integer, Cart> paircart = new Pair<Integer,Cart>(1, new Cart<Integer>());
+
+        previewClass(2.3);
+
+        previewClass("able", 1222);
+        
+    }
+    static public <U> void previewClass(U user) {
+        System.out.println("U: "+ user.getClass().getName());
+    }
+    static public <U,S> void previewClass(U user, S user2) {
+        System.out.println("U: "+ user.getClass().getName());
+        System.out.println("S: "+ user2.getClass().getName());
     }
     
 }
