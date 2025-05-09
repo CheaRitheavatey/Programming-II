@@ -455,3 +455,24 @@ week 8: error handling
 GroupLayout layout = new GroupLayout(getContentPane());
 
 .getConentPane() is a method that returns the content pane of the frame
+
+# Generic 
+generic allow you to abstarct over types
+in a nutshall generic eneable types (classes and interfaces) to be parameters when defining classes, interfaces and methods
+
+much like the more famililar parameters used in medthod declaration, type parameters provide a way for you to reuse the smae code with different inputs. 
+
+the difference is that the input to formal parameter are vales while the input to type parameter are types
+
+advantage of code with generic
+stronger type check at compile time
+elimiation of csat
+enable programmer to implement generic interfaces
+
+type parameter nameing convention
+- E - element
+- K - key
+- N - number
+- T - type
+- V - value
+- S,U,V - 2nd, 3rd and 4th type parameters
