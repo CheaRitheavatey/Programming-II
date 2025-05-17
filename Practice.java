@@ -46,6 +46,24 @@ public class Practice {
         Node tom = firstname.item(0);
         System.out.println("tom: " + tom.getTextContent());
 
+        // edit xml
+        Node student = d.getElementsByTagName("student").item(0);
+        student.getAttributes().getNamedItem("neptun").setTextContent("old111");
+
+
+        // look for a certain thing to change 
+        NodeList n = d.getElementsByTagName("student");
+        for (int i = 0; i < n.getLength(); i++) {
+            Node nodes = n.item(i);
+            if (nodes.getNodeType() == Node.ELEMENT_NODE) {
+                Element el = (Element) nodes;
+                NodeList marks = el.getElementsByTagName("mark");
+                if (marks.getLength() > 0) {
+                    Element markel = (Element) marks.item(0);
+                    markel.setTextContent("wow amazing");
+                }
+            }
+        }
         // print out on terminal
         TransformerFactory tff = TransformerFactory.newInstance();
         Transformer tf = tff.newTransformer();
@@ -54,7 +72,7 @@ public class Practice {
         DOMSource source = new DOMSource(d);
         StreamResult target = new StreamResult(System.out);
 
-        tf.transform(source, target);
+        tf.transform(source, target);        
 
        
     }
