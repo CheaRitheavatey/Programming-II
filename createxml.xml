@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<products>
-    <product>
-        <name>Widget</name>
-        <price>19.99</price>
-    </product>
-</products>
+<store>
+    <item>
+        <name>Book</name>
+        <price>10.99</price>
+    </item>
+    <item>
+        <name>Pen</name>
+        <price>1.50</price>
+    </item>
+</store>

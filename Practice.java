@@ -1,5 +1,4 @@
 import java.io.File;
-import java.util.List;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -15,6 +14,16 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 public class Practice {
+    // retrieve the price of the pen
+    public static void exercise2() throws Exception {
+        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+        DocumentBuilder db = dbf.newDocumentBuilder();
+        Document d = db.parse("createxml.xml");
+
+        NodeList price = d.getElementsByTagName("price");
+        Node penprice= price.item(1);
+        System.out.println("price of pen: " + penprice.getTextContent());
+    }
     public static void exercise1() throws Exception{
         // write a product 
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
@@ -129,7 +138,8 @@ public class Practice {
         // fullJustify(arr, 0);
 
         // readxml();
-        exercise1();
+        // exercise1();
+        exercise2();
         
     }
     
