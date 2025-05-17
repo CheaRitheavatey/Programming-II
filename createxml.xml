@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<class>
-    <name>Elementary Programming II</name>
-    <students>
-        <student id="1" neptun="123">
-            <!--this is a comment-->
-            <firstname>John</firstname>
-            <lastname>JOE</lastname>
-            <mark>100</mark>
-        </student>
-        <student>
-            <firstname>Alice</firstname>
-            <lastname>ABC</lastname>
-            <mark>90</mark>
-        </student>
-    </students>
-</class>
+<products>
+    <product>
+        <name>Widget</name>
+        <price>19.99</price>
+    </product>
+</products>

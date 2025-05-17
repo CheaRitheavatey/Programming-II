@@ -1,7 +1,9 @@
+import java.io.File;
 import java.util.List;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
@@ -13,6 +15,38 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 public class Practice {
+    public static void exercise1() throws Exception{
+        // write a product 
+        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+        DocumentBuilder db = dbf.newDocumentBuilder();
+        Document d = db.newDocument();
+
+        Element products = d.createElement("products");
+        d.appendChild(products);
+
+        Element product = d.createElement("product");
+        products.appendChild(product);
+
+        Element name = d.createElement("name");
+        name.setTextContent("Widget");
+        product.appendChild(name);
+
+        Element price = d.createElement("price");
+        price.setTextContent("19.99");
+        product.appendChild(price);
+
+        TransformerFactory tff = TransformerFactory.newInstance();
+        Transformer tf = tff.newTransformer();
+
+        DOMSource source = new DOMSource(d);
+        StreamResult target = new StreamResult(new File("createxml.xml"));
+            // StreamResult target = new StreamResult(System.out);
+
+            // to make the file pretty and enter properly
+            tf.setOutputProperty(OutputKeys.INDENT, "yes");
+            tf.transform(source, target);
+
+    }
     // practice for xml file: how to read, write into it and modify?
     public static void readxml() throws Exception{
         // read the whole file xml
@@ -70,7 +104,8 @@ public class Practice {
 
         // need source and target
         DOMSource source = new DOMSource(d);
-        StreamResult target = new StreamResult(System.out);
+        StreamResult target = new StreamResult(new File("2.xml"));
+        tf.setOutputProperty(OutputKeys.INDENT, "yes");
 
         tf.transform(source, target);        
 
@@ -93,8 +128,8 @@ public class Practice {
         String[] arr = {"Science","is","what","we","understand","well","enough","to","explain","to","a","computer.","Art","is","everything","else","we","do"};
         // fullJustify(arr, 0);
 
-        readxml();
-
+        // readxml();
+        exercise1();
         
     }
     
