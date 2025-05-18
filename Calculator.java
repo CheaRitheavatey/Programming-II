@@ -159,7 +159,11 @@ public class Calculator extends JFrame implements ActionListener {
         } else if (e.getSource() == buttonClear) {
             textField.setText("");
         }
+
         
+    }
+    public static void main(String[] args) {
+        new Calculator();
     }
     
     
