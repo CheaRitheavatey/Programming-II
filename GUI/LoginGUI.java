@@ -26,7 +26,7 @@ public class LoginGUI extends JFrame implements ActionListener {
         setTitle("Login");
         setPreferredSize(new Dimension(300,150));
         name = new JLabel("Name: ");
-        name.setForeground(Color.RED);
+        name.setForeground(Color.RED); // meaning "Name" is in red
 
         password = new JLabel("Password: ");
         

@@ -476,3 +476,16 @@ type parameter nameing convention
 - T - type
 - V - value
 - S,U,V - 2nd, 3rd and 4th type parameters
+
+# Layout GUI
+when to use each layout?
+- borderlayout: 
+    - best for: dividing a window into 5 main regions: North, South, East, West, and Center
+    - when to use: You want to create a layout with a top/bottom bar, side panels, and a main central area.
+    - automatically reize componenet to fill the assign region
+
+- gridlayout:
+    - best for: laying out componenet in a uniform grid (calculator button)
+    - when to use: ou want a table-like layout (like buttons on a calculator).
+    - all cell are the same size
+    
