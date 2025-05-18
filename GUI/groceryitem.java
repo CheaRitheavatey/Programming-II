@@ -18,7 +18,7 @@ public class groceryitem {
         return this.quality;
     }
     public String toString() {
-        return this.item + " ( Quanity: " + this.quality + " )";
+        return this.item + " - " + this.quality;
     }
     
 }
