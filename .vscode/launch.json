@@ -1,0 +1,322 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "BankAccount",
+            "request": "launch",
+            "mainClass": "BankAccount",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "Calculator",
+            "request": "launch",
+            "mainClass": "Calculator",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "ConverterJframe",
+            "request": "launch",
+            "mainClass": "ConverterJframe",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "Week12",
+            "request": "launch",
+            "mainClass": "GUI.Week12",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "finalPractice",
+            "request": "launch",
+            "mainClass": "GUI.finalPractice",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "grocerygui",
+            "request": "launch",
+            "mainClass": "GUI.grocerygui",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "grocerymanager",
+            "request": "launch",
+            "mainClass": "GUI.grocerymanager",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "HW2",
+            "request": "launch",
+            "mainClass": "Methodology.HW2",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "Homework1",
+            "request": "launch",
+            "mainClass": "Methodology.Homework01_Package.Homework1",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "Homework03",
+            "request": "launch",
+            "mainClass": "Methodology.Homework03",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "Homework09",
+            "request": "launch",
+            "mainClass": "Methodology.Homework09",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "Homework10",
+            "request": "launch",
+            "mainClass": "Methodology.Homework10",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "HomeworkWeek05",
+            "request": "launch",
+            "mainClass": "Methodology.HomeworkWeek05",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "week1",
+            "request": "launch",
+            "mainClass": "Methodology.week1",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "practice",
+            "request": "launch",
+            "mainClass": "Methodology.week10Package.practice",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "week10",
+            "request": "launch",
+            "mainClass": "Methodology.week10Package.week10",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "week13",
+            "request": "launch",
+            "mainClass": "Methodology.week13Package.week13",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "week2",
+            "request": "launch",
+            "mainClass": "Methodology.week2",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "week3",
+            "request": "launch",
+            "mainClass": "Methodology.week3",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "file1",
+            "request": "launch",
+            "mainClass": "Methodology.week4Package.file1",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "file2",
+            "request": "launch",
+            "mainClass": "Methodology.week4Package.file2",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "TestInheritance",
+            "request": "launch",
+            "mainClass": "Methodology.week5Package.TestInheritance",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "TestFile",
+            "request": "launch",
+            "mainClass": "Methodology.week6Package.TestFile",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "Midterm",
+            "request": "launch",
+            "mainClass": "Midterm",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "Practice",
+            "request": "launch",
+            "mainClass": "Practice",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "ProllEleven01",
+            "request": "launch",
+            "mainClass": "ProllEleven01",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "SimpleCalculator",
+            "request": "launch",
+            "mainClass": "SimpleCalculator",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "Exceptionhandling",
+            "request": "launch",
+            "mainClass": "w3resource.Exceptionhandling",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "Filehandling",
+            "request": "launch",
+            "mainClass": "w3resource.Filehandling",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "Fiveexercise",
+            "request": "launch",
+            "mainClass": "w3resource.Fiveexercise",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "Practice(1)",
+            "request": "launch",
+            "mainClass": "w3resource.Practice",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "finalPractice(1)",
+            "request": "launch",
+            "mainClass": "w3resource.finalPractice",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "week1(1)",
+            "request": "launch",
+            "mainClass": "week1",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "week11",
+            "request": "launch",
+            "mainClass": "week11",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "week2(1)",
+            "request": "launch",
+            "mainClass": "week2",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "week3(1)",
+            "request": "launch",
+            "mainClass": "week3",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "week4",
+            "request": "launch",
+            "mainClass": "week4",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "MainClass",
+            "request": "launch",
+            "mainClass": "week4Package.MainClass",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "week5",
+            "request": "launch",
+            "mainClass": "week5",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "TestProject",
+            "request": "launch",
+            "mainClass": "week5projectClass.TestProject",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "TestProjectIndividual",
+            "request": "launch",
+            "mainClass": "week5projectClass.TestProjectIndividual",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "TestShape",
+            "request": "launch",
+            "mainClass": "week6Package.TestShape",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "week8",
+            "request": "launch",
+            "mainClass": "week8",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "week9",
+            "request": "launch",
+            "mainClass": "week9",
+            "projectName": "Programming-II_c7bc42aa"
+        }
+    ]
+}

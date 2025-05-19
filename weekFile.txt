@@ -1,6 +1,2 @@
-apple
-banana
-cherry
-daurian
-elephant
-fix
+this is what i write
+i write another one
