@@ -1,3 +1,4 @@
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -193,18 +194,47 @@ public class week9 {
 
 
     }
+
+     // create a method that check a file to see if a word was mention inside a file and print the first match
+    public static void example3(Path path, String word) throws IOException, FileNotFoundException {
+        if (!Files.exists(path)) {
+            throw new FileNotFoundException();
+        }
+        
+        // read the file
+        try (BufferedReader reader = new BufferedReader(new FileReader(path.toString()))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                if (line.contains(word)) {
+                    System.out.println("word " + word + " found in line: " + line);
+                    break;
+                } else {
+                    System.out.println(word + " not found");
+                    break;
+                }
+            }
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+            
+       
+
+
+    }
     public static void main(String[] args) throws IOException{
         // fileInput();
         // unichar();
         // path();
         // example1(Paths.get("week8File.txt"));
-        // example2(Paths.get("week8File.txt"), "value");
-
-        try {
-            exercise7(Paths.get("week9.java"));
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
+        example2(Paths.get("week8File.txt"), "word1");
         
+        // try {
+            //     exercise7(Paths.get("week9.java"));
+            // } catch (IOException e) {
+                //     System.out.println(e.getMessage());
+                // }
+                
+                
+        example3(Paths.get("week8File.txt"), "word1");
     }
 }
