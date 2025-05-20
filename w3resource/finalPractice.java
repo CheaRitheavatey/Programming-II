@@ -133,12 +133,30 @@ public class finalPractice {
             System.out.println(e.getMessage());
         }
     }
+
+    public static void wordcounttool(String filename, String word) {
+        // count the number of the occurrences of a specific word in a text file
+        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
+            String line;
+            int count = 0;
+            while ((line = reader.readLine()) != null) {
+                if (line.toLowerCase().contains(word.toLowerCase())) {
+                    count += 1;
+                }
+            }
+            System.out.println("Total of the word: '" + word + "' appeared is: " + count);
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+    }
     public static void main(String[] args) {
         // readConsole();
         // readfile(Paths.get("weekFile.txt"));
         // countword("weekFile.txt");
 
         // searchword("weekFile.txt", "this");
-        replaceword("weekFile.txt", "--", "write");
+        // replaceword("weekFile.txt", "--", "write");
+
+        wordcounttool("weekFile.txt", "write");
     }
 }
