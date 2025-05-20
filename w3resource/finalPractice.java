@@ -10,6 +10,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class finalPractice {
@@ -147,6 +149,34 @@ public class finalPractice {
             System.out.println("Total of the word: '" + word + "' appeared is: " + count);
         } catch (IOException e) {
             System.out.println(e.getMessage());
+        }
+    }
+
+     public static void analyzeLogFile(String filename, String outputFilename) {
+        Map<String, Integer> errorCounts = new HashMap<>();
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                if (line.contains("ERROR")) {
+                    String errorType = line.split(" ")[1]; // Assuming error type is the second word
+                    errorCounts.put(errorType, errorCounts.getOrDefault(errorType, 0) + 1);
+                }
+            }
+        } catch (IOException e) {
+            System.out.println("Error reading the log file: " + e.getMessage());
+            return;
+        }
+
+        // Write the results to the output file
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(outputFilename))) {
+            writer.write("Error Type Count\n");
+            for (Map.Entry<String, Integer> entry : errorCounts.entrySet()) {
+                writer.write(entry.getKey() + ": " + entry.getValue() + "\n");
+            }
+            System.out.println("Analysis written to " + outputFilename);
+        } catch (IOException e) {
+            System.out.println("Error writing to the output file: " + e.getMessage());
         }
     }
     public static void main(String[] args) {
