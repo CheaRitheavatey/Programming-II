@@ -179,6 +179,22 @@ public class finalPractice {
             System.out.println("Error writing to the output file: " + e.getMessage());
         }
     }
+
+    // 5 exercise from poe
+    public static void exercise2(String filename) {
+        // read a text file containing list of names
+        StringBuilder str = new StringBuilder();
+        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
+            String line;
+        
+            while ((line = reader.readLine()) != null) {
+                str.append(line).append("\n");
+            }
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+
+    }
     public static void main(String[] args) {
         // readConsole();
         // readfile(Paths.get("weekFile.txt"));

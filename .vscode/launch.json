@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Animal",
+            "request": "launch",
+            "mainClass": "w3resource.exercise1.Animal",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "exercise3",
+            "request": "launch",
+            "mainClass": "GUI.exercise3",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
