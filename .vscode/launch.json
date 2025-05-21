@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Oop",
+            "request": "launch",
+            "mainClass": "w3resource.Oop",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
             "name": "ColorPicker",
             "request": "launch",
             "mainClass": "GUI.ColorPicker",

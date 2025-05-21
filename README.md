@@ -491,7 +491,6 @@ when to use each layout?
     
 # Methodology Of gramming 
 - week 01:
-- talk about 
     - area of computer application
     - scientific application (first digital computer..)
     - business application (first successful high-level language was COBOL)
@@ -600,3 +599,7 @@ when to use each layout?
     - generic
     - advantage of code with generic
     - type of parameter naming convention
+
+
+# Question to consider:
+1. Explain the difference between JDK, JRE, and JVM. Why is Java considered platform-independent?
