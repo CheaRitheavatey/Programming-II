@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ColorPicker",
+            "request": "launch",
+            "mainClass": "GUI.ColorPicker",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
             "name": "Animal",
             "request": "launch",
             "mainClass": "w3resource.exercise1.Animal",
