@@ -489,3 +489,114 @@ when to use each layout?
     - when to use: ou want a table-like layout (like buttons on a calculator).
     - all cell are the same size
     
+# Methodology Of gramming 
+- week 01:
+- talk about 
+    - area of computer application
+    - scientific application (first digital computer..)
+    - business application (first successful high-level language was COBOL)
+    - AI (first program was LISP)
+    - system program (first program was PLIS)
+    - web software (first program was HTML)
+
+    - programming paradigms (style of progamming)
+    - common paradigm:
+        - imperative: most popular programming language called von neuman architecture. where it execute in a fetch execute cycle. ex, C, C++, Java, fortran
+
+        - declarative/logic
+        - functional: primary mean of computation is applying function to given parameter. ex, lISP, lisp, R, python, ML, javascript
+
+        - procedural
+        - object oriented
+
+        - frontend vs backend
+
+- week02:
+    - why use java?
+    - java edition
+    - JDK (java development kit) = JRE (java runtime environment) (JVM + library classes)+ development tools
+    - java is a plateform-independent programming lanuage and doesnt work on the one step compliation.
+
+    - it involve 2 steps
+        1. through OS-independent compiler
+        2. in virtual machine which is custom bulit for every OS
+        or you can say
+        1. create java program
+        2. complie the program
+        3. execute the program (class that contrain main method)
+
+        .java file --> compiler --> .class file --> jvm (java virtual machine) --> machine code
+
+        or 
+        byte code --> jvm (java virtual machine) --> machine code
+
+    - primary componenet of computer
+    - implementation method: compilation, pure interpretation, hybrid interpretation
+
+    - preprocessor
+    - variable
+    - data type (primitive, non primitive)
+
+- week03:
+    - type conversion: assign a value of one primitive data type to another type. (wideing coversion, narrowing coversion)
+    - wrapper class
+    - operator: (arithmetic, assignment operator, comparison, logical operator, bitwise operator)
+    - control statement: (if, switch, while, for, do while)
+    - ternary operator: variable = (condition ? true : false)
+
+- week04:
+    - expression: is a construct make up of variable, operators, and method invocation which are constructed according to the syntax of the lanuage that evaluate to a single value
+    - statement: equvialent to sentences in natural language. a statement form a complete unit of execution
+    - block: group of 0 or more statement
+    - scope: the visibility of variable and method (local variable, non local variable)
+    - data structure 
+    - algorithm
+    - method
+    - collection
+    - arraylist
+    - linkedlist
+    - hashmap
+    - hashset
+
+- week05:
+    - oop advantage
+    - object: have state and behavior
+    - class: blue print from which individual objects are created
+    - constructor: is a special method that is called when object is created. it is used to initialize the object's state.
+    - modifier: ACCESS MODIFIER
+    - pillar of oop (encapsulation, inheritance, polymorphism, abstraction)
+
+- week06:
+    - inheritance
+    - super keyword
+    - polymorphism
+
+- week07:
+    - abstraction
+    - enum type
+
+- week08:
+    - exception
+    - try-catch block
+    - finally block
+    - try with resource statement: try (resource) {}
+    - throw
+    - exception class mean ey klas
+    - create an exception classes
+
+- week09:
+    - basic IO
+    - byte stream
+    - char stream
+    - file input and output stream
+
+- week10:
+    - xml feature
+    - how to read from an existing xml
+    - how to write to an existing xml
+    - how to create a new xml file
+
+- week13:
+    - generic
+    - advantage of code with generic
+    - type of parameter naming convention
