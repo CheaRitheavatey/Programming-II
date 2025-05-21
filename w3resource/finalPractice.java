@@ -289,6 +289,7 @@ public class finalPractice {
 
         
     }
+
     public static void main(String[] args) {
         // readConsole();
         // readfile(Paths.get("weekFile.txt"));
@@ -315,8 +316,27 @@ public class finalPractice {
         // exercise6(arr);
         // readInt();
 
-        createXML();
+        // createXML();
+       
+        // testing enum day
+        Day today = Day.MONDAY;
+
+        // check if today is weekend
+        if (today.isWeekend(today)) {
+            System.out.println(today + " is a weekend");
+        } else {
+            System.out.println(today + " is not a weekend");
+        }
+
+        // today.printDayMessage(today);
+
+        // testing generic combine with enum
+        Day[] days = Day.values(); // get the values of the day in enum
+        Box<Day> s = new Box<>();
+        s.printEnumvalue(days);
+
     }
+
 }
 
 
@@ -364,6 +384,11 @@ enum Day {
         return (day.equals(SUNDAY) || day.equals(SATURDAY));
     }
 
+    // ai do this way for isweekend()
+    // public boolean isWeekend() {
+    //     return this == SUNDAY || this == SATURDAY;
+    // }
+
     // print message for each day
     public void printDayMessage(Day day) {
         switch (day) {
@@ -392,7 +417,7 @@ enum Day {
     }
 }
 
-// generic class
+// generic class combine with enum
 class Box<T> {
     private T item;
 
@@ -401,5 +426,12 @@ class Box<T> {
     }
     public T getItem() {
         return this.item;
+    }
+
+    // generic method that takes an array of enum and print all the value
+    public <T extends Enum<T>> void printEnumvalue(T[] values) {
+        for (T i: values) {
+            System.out.println(i);
+        }
     }
 }
