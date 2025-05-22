@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ExtraclassLesson",
+            "request": "launch",
+            "mainClass": "ExtraclassLesson",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
             "name": "FinalExam",
             "request": "launch",
             "mainClass": "Methodology.FinalExam",
