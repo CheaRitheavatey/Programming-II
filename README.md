@@ -603,3 +603,25 @@ when to use each layout?
 
 # Question to consider:
 1. Explain the difference between JDK, JRE, and JVM. Why is Java considered platform-independent?
+   Difference between JDK, JRE, and JVM
+JDK (Java Development Kit):
+
+Definition: A software development kit used for developing Java applications.
+Components: It includes the JRE, a set of development tools (like the Java compiler javac), and libraries needed for developing Java programs.
+Usage: Required for writing, compiling, and running Java applications.
+JRE (Java Runtime Environment):
+
+Definition: A part of the JDK that provides the environment to run Java applications.
+Components: Contains the JVM and standard libraries necessary for running Java programs.
+Usage: Used for executing Java applications but does not include development tools.
+JVM (Java Virtual Machine):
+
+Definition: An abstract machine that enables Java bytecode to be executed on any platform.
+Function: Converts bytecode (compiled Java code) into machine code specific to the host operating system.
+Usage: Responsible for executing Java applications and managing memory and system resources.
+
+2. Why is Java Considered Platform-Independent?
+Java is considered platform-independent due to its use of bytecode and the JVM:
+
+Bytecode: When Java code is compiled, it is converted into an intermediate form called bytecode, which is not specific to any hardware or operating system.
+JVM: The JVM interprets the bytecode and translates it into machine code for the specific platform on which it runs. As long as a JRE is available for a platform, Java applications can run on it without modification.
