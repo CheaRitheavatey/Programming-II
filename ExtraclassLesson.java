@@ -34,7 +34,7 @@ public class ExtraclassLesson {
         // class what to notice:
         // ArrayList<Device> 
         // private DeviceType device;
-        
+
         Device d1 = new Device(DeviceType.COMPUTER, "MSI", "Thin", 2022);
         Device d2 = new Device(DeviceType.PHONE, "OPPO", "F7", 2020);
         System.out.println(Device.getDevice());
@@ -170,3 +170,4 @@ enum Planet {
         return gravity;
     }
 }
+

@@ -73,6 +73,8 @@ public class grocerygui extends JFrame implements ActionListener {
         // action 
         add.addActionListener(this);
         clear.addActionListener(this);
+
+        
     }
 
     @Override

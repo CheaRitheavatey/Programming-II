@@ -114,6 +114,26 @@ public class Filehandling {
         }
     
     }
+
+    public static void readAndWriteBooks(Path originalPath, Path newPath) {
+        // read first 
+        StringBuilder str = new StringBuilder();
+        try (BufferedReader reader = new BufferedReader(new FileReader(originalPath.toString()))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                str.append(line).append("\n");
+            }
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+
+        // write to another file
+        try (FileWriter writer = new FileWriter(newPath.toString())) {
+            writer.write(str.toString());
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+    }
     public static void main(String[] args) throws IOException, FileNotFoundException {
         // exercise2(Paths.get("week8File.txt"), Paths.get("week9File.txt"));
         // System.out.println(countCharacters("week8File.txt" ));

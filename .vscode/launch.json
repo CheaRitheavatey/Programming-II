@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BookGUI",
+            "request": "launch",
+            "mainClass": "GUI.Book.BookGUI",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "SimpleCalculator",
+            "request": "launch",
+            "mainClass": "GUI.SimpleCalculator",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
+            "name": "Book",
+            "request": "launch",
+            "mainClass": "GUI.Book.Book",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
             "name": "ExtraclassLesson",
             "request": "launch",
             "mainClass": "ExtraclassLesson",
