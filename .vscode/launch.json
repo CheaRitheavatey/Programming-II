@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FinalExam",
+            "request": "launch",
+            "mainClass": "Methodology.FinalExam",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
             "name": "Oop",
             "request": "launch",
             "mainClass": "w3resource.Oop",
