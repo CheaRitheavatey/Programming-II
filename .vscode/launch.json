@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FinalExam",
+            "request": "launch",
+            "mainClass": "FinalExam",
+            "projectName": "Programming-II_c7bc42aa"
+        },
+        {
+            "type": "java",
             "name": "BookGUI",
             "request": "launch",
             "mainClass": "GUI.Book.BookGUI",
