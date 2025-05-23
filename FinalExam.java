@@ -90,7 +90,7 @@ public class FinalExam {
     }
 
     public static void main(String[] args) {
-        generateRandom();
-        askForN(Paths.get("week8File.txt"));
+        // generateRandom();
+        askForN(Paths.get("weekFile.txt"));
     }
 }
