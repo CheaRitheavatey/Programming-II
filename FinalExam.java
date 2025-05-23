@@ -49,7 +49,7 @@ public class FinalExam {
         Scanner scanner = new Scanner(System.in);
         int count = 0;
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(path.toString()))){
+        try {
             // ask user to enter a whole number n
             System.out.print("Enter a whole number: ");
             int n = scanner.nextInt();
@@ -72,8 +72,9 @@ public class FinalExam {
             } else {
                 Files.write(path, list,StandardOpenOption.APPEND);
             }
-
+            
             // read file to terminal
+            BufferedReader reader = new BufferedReader(new FileReader(path.toString()));
             String line;
             System.out.println("Read what is on the file: ");
 
@@ -91,6 +92,6 @@ public class FinalExam {
 
     public static void main(String[] args) {
         // generateRandom();
-        askForN(Paths.get("weekFile.txt"));
+        askForN(Paths.get("week.txt"));
     }
 }
