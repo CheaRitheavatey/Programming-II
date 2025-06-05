@@ -434,3 +434,194 @@ week 8: error handling
 - .canRead() and .canWrite() check if the file can be read or write
 - .readable() and .writable() check if the file can be read or write
 - file.lastModified() to get the last modified time
+
+
+- xml: processing
+    extensible markup language
+    is tag based similar to html
+    can define your own tags
+    element are case sensitive
+    reserve word "XML" in all case
+    xml name must start with letter or underscore and cannot contain white space
+
+
+- JAXP is for processing xml 
+- xml parser give way to access or modfiy data: commonly use are DOM, SAX, JDOM StAX, JAXB
+
+
+- group layout: align component horizontally or verticaly, making it easier to create a visually appealing layout
+
+- create a group layout instance
+GroupLayout layout = new GroupLayout(getContentPane());
+
+.getConentPane() is a method that returns the content pane of the frame
+
+# Generic 
+generic allow you to abstarct over types
+in a nutshall generic eneable types (classes and interfaces) to be parameters when defining classes, interfaces and methods
+
+much like the more famililar parameters used in medthod declaration, type parameters provide a way for you to reuse the smae code with different inputs. 
+
+the difference is that the input to formal parameter are vales while the input to type parameter are types
+
+advantage of code with generic
+stronger type check at compile time
+elimiation of csat
+enable programmer to implement generic interfaces
+
+type parameter nameing convention
+- E - element
+- K - key
+- N - number
+- T - type
+- V - value
+- S,U,V - 2nd, 3rd and 4th type parameters
+
+# Layout GUI
+when to use each layout?
+- borderlayout: 
+    - best for: dividing a window into 5 main regions: North, South, East, West, and Center
+    - when to use: You want to create a layout with a top/bottom bar, side panels, and a main central area.
+    - automatically reize componenet to fill the assign region
+
+- gridlayout:
+    - best for: laying out componenet in a uniform grid (calculator button)
+    - when to use: ou want a table-like layout (like buttons on a calculator).
+    - all cell are the same size
+    
+# Methodology Of gramming 
+- week 01:
+    - area of computer application
+    - scientific application (first digital computer..)
+    - business application (first successful high-level language was COBOL)
+    - AI (first program was LISP)
+    - system program (first program was PLIS)
+    - web software (first program was HTML)
+
+    - programming paradigms (style of progamming)
+    - common paradigm:
+        - imperative: most popular programming language called von neuman architecture. where it execute in a fetch execute cycle. ex, C, C++, Java, fortran
+
+        - declarative/logic
+        - functional: primary mean of computation is applying function to given parameter. ex, lISP, lisp, R, python, ML, javascript
+
+        - procedural
+        - object oriented
+
+        - frontend vs backend
+
+- week02:
+    - why use java?
+    - java edition
+    - JDK (java development kit) = JRE (java runtime environment) (JVM + library classes)+ development tools
+    - java is a plateform-independent programming lanuage and doesnt work on the one step compliation.
+
+    - it involve 2 steps
+        1. through OS-independent compiler
+        2. in virtual machine which is custom bulit for every OS
+        or you can say
+        1. create java program
+        2. complie the program
+        3. execute the program (class that contrain main method)
+
+        .java file --> compiler --> .class file --> jvm (java virtual machine) --> machine code
+
+        or 
+        byte code --> jvm (java virtual machine) --> machine code
+
+    - primary componenet of computer
+    - implementation method: compilation, pure interpretation, hybrid interpretation
+
+    - preprocessor
+    - variable
+    - data type (primitive, non primitive)
+
+- week03:
+    - type conversion: assign a value of one primitive data type to another type. (wideing coversion, narrowing coversion)
+    - wrapper class
+    - operator: (arithmetic, assignment operator, comparison, logical operator, bitwise operator)
+    - control statement: (if, switch, while, for, do while)
+    - ternary operator: variable = (condition ? true : false)
+
+- week04:
+    - expression: is a construct make up of variable, operators, and method invocation which are constructed according to the syntax of the lanuage that evaluate to a single value
+    - statement: equvialent to sentences in natural language. a statement form a complete unit of execution
+    - block: group of 0 or more statement
+    - scope: the visibility of variable and method (local variable, non local variable)
+    - data structure 
+    - algorithm
+    - method
+    - collection
+    - arraylist
+    - linkedlist
+    - hashmap
+    - hashset
+
+- week05:
+    - oop advantage
+    - object: have state and behavior
+    - class: blue print from which individual objects are created
+    - constructor: is a special method that is called when object is created. it is used to initialize the object's state.
+    - modifier: ACCESS MODIFIER
+    - pillar of oop (encapsulation, inheritance, polymorphism, abstraction)
+
+- week06:
+    - inheritance
+    - super keyword
+    - polymorphism
+
+- week07:
+    - abstraction
+    - enum type
+
+- week08:
+    - exception
+    - try-catch block
+    - finally block
+    - try with resource statement: try (resource) {}
+    - throw
+    - exception class mean ey klas
+    - create an exception classes
+
+- week09:
+    - basic IO
+    - byte stream
+    - char stream
+    - file input and output stream
+
+- week10:
+    - xml feature
+    - how to read from an existing xml
+    - how to write to an existing xml
+    - how to create a new xml file
+
+- week13:
+    - generic
+    - advantage of code with generic
+    - type of parameter naming convention
+
+
+# Question to consider:
+1. Explain the difference between JDK, JRE, and JVM. Why is Java considered platform-independent?
+   Difference between JDK, JRE, and JVM
+JDK (Java Development Kit):
+
+Definition: A software development kit used for developing Java applications.
+Components: It includes the JRE, a set of development tools (like the Java compiler javac), and libraries needed for developing Java programs.
+Usage: Required for writing, compiling, and running Java applications.
+JRE (Java Runtime Environment):
+
+Definition: A part of the JDK that provides the environment to run Java applications.
+Components: Contains the JVM and standard libraries necessary for running Java programs.
+Usage: Used for executing Java applications but does not include development tools.
+JVM (Java Virtual Machine):
+
+Definition: An abstract machine that enables Java bytecode to be executed on any platform.
+Function: Converts bytecode (compiled Java code) into machine code specific to the host operating system.
+Usage: Responsible for executing Java applications and managing memory and system resources.
+
+2. Why is Java Considered Platform-Independent?
+Java is considered platform-independent due to its use of bytecode and the JVM:
+
+Bytecode: When Java code is compiled, it is converted into an intermediate form called bytecode, which is not specific to any hardware or operating system.
+JVM: The JVM interprets the bytecode and translates it into machine code for the specific platform on which it runs. As long as a JRE is available for a platform, Java applications can run on it without modification.

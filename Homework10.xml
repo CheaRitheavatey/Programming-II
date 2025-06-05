@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<departments>
+    <department>
+        <name>HR</name>
+        <employees>
+            <employee id="123456">
+                <firstname>Johny</firstname>
+                <lastname>Lum</lastname>
+            </employee>
+            <employee id="567891">
+                <firstname>Rick</firstname>
+                <lastname>Forbis</lastname>
+            </employee>
+        </employees>
+    </department>
+    <department>
+        <name>Marketing</name>
+        <employees>
+            <employee id="159987">
+                <firstname>Margaret</firstname>
+                <lastname>Brown</lastname>
+            </employee>
+        </employees>
+    </department>
+</departments>

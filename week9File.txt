@@ -5,3 +5,5 @@ writer appendnullprintwriter append
 abc
 Apple
 Banana
+1
+2
