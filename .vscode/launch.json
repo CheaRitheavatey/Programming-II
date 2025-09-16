@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LeetCode",
+            "request": "launch",
+            "mainClass": "LeetCode",
+            "projectName": "Programming-II_f7635f6c"
+        },
+        {
+            "type": "java",
+            "name": "Calculator",
+            "request": "launch",
+            "mainClass": "GUI.Calculator",
+            "projectName": "Programming-II_f7635f6c"
+        },
+        {
+            "type": "java",
             "name": "FinalExam",
             "request": "launch",
             "mainClass": "FinalExam",
