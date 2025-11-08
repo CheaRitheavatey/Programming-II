@@ -1,0 +1,107 @@
+- scientific app = use simple data structure, array, matrix, counting loop, selection, effeciency is the primary concern, first scientific is fortran but nowaday python is most used
+- business app = language that is elaborate report, store decimal num, other operation first language for this is COBOL but now java is more popular
+- AI = symbolic computation, use linked list, more flexibility, first program: lISP, now C, R, python
+- system program = aka system software, usually low level => no restriction and effeciency, old program: PLIS, BLISS, now C, C++
+- web software = www support a huge type of language, php, javascript and use script like html and css
+
+- programming paradigms: style of programming, programming language can be classifited into multiple paradigms
+some paradigms concern about execution model such as code into unit along with the state that is modifited by the code yet other are concents mainly with style of the syntax grammar.
+
+- common paradigms: functional, imperative, procedural, declarative, object oriented
+    - imperative programming: 
+        use state and actions
+        von neuman architecture (fetch-execute cycle)
+        more effeciency than functional programming
+        code into unit
+        process in cpu 
+        place that they are execution is different from place that they are written
+        variable is data that we are going to model.
+        assignment statement is a statement that assign value to a variable. example, x = 5
+        language = C, C++, Java, fortran,
+    
+    - functional programming:
+        use functions
+        instead of having assignment statement, we have function call to execute
+        offer simplicity and modularity
+        not as effecient as imperative programming
+        language = lISP, lisp, R, python, ML, javascript
+    
+    - procedural programming:
+        both imperative and functional programming
+        it knows what to do, obey order
+        language = ALGO, COBOL, BASIC, Pastcal
+    
+    - declarative programming:
+        collection of facts and rules
+        ask question and attempt to answer by counting the facts and rules
+        declarative rather than procedural, which mean only what we wanted is important not the procedure
+        syntax is different from imperative (dont have to provided all the detail)
+        language = Prolog, Eriang
+    
+    - object oriented programming:
+        use objects
+        use inheritance and polymorphism and abstraction and encapsulation
+        begin with data abstraction with encapsulate process with data object and controls access to data and add inheritance and dynamic binding
+        do not consider any language as separated because it provided a strucutre
+        its just give a new way to structure the program 
+        language = Java, C#
+
+
+    - frontend: what user see
+    - backend: how everything work
+    both have to connect and work together
+
+
+Java overview: based on C+ but desgined to be smaller, simpler and more reliable
+- all java subprograms are methods and are defined in classes. java is a class based, oop language
+
+- why use java?
+    - open source
+    - cross platform
+    - most popular programming language with a huge community 
+    - oo language which gives a clear structure to program
+    - free compiler/interpreter system which can be easily obtain on the web
+
+- jdk = jre (jvm + library classes) + devlopment tools
+
+- compliation and execution:
+    java need 2 step exectuion:
+        1. create a java program
+        2. complie the program
+        3. execute the program (class that contrain main method)
+
+        .java file --> compiler --> .class file --> jvm (java virtual machine) --> machine code
+
+primary component of computer:
+    - internal memeory: store data and program
+    - processor: collection of circuit that provide a realization of a set of primitive operations, or machine instruction such as those for arithetic and logic operation (ex. cpu)
+                microintstruction = low level
+    - machine language system need many os facilities, they interface with the os rather than directly with the processor in machine language
+    - os and language implementatin are layered over the machine language 
+
+    - layer we have on top of the machine: bare machine -> microinstructor -> os -> language (depend on the language there will be ) -> complier on top.
+
+
+- implementation method:
+    - compliation: just translated into machine language and done. 
+                (+): really fast execution once the translation process is complete. 
+                (-): slower when apply changes to the source code because the translation process must be redone.
+                (ex. C, COBOL, C++) 
+    - pure interpretation: opposite of compliation, there will be another program that act as an interpreter like fetch-execute cycle
+                (+): allow easy implementation ofmany source level debugging operation (ex. show detail in error message, show the stack trace, etc.)
+                (-): very slow exectuion cause b y decoding of the high-level language statement, must be decoded everytime regardless of how many times a statement is executed, need more space
+                (ex. python)
+    - hybrid interpretation (java): they translated high level language program to intermediate (byte code for java) and then during exection it complier intermediate language into machine code.
+                they implementated JIT (just in time), no preprocessor for java
+                (+): very fast exectuion
+
+
+- variable: abstraction of a computer memory cell/ collection of cell.
+
+- for each 
+- for loop
+- break: jump out of the loop and done like exection
+- continue: when you want to skip a certain step, it will go back to go the top, and start the next cycle of loop
+
+- method overload: method with the can have the same name can have different parameters 
+ method overide:  means having two methods with the same arguments, but different implementations. One of them would exist in the parent class, while another will be in the derived, or child class.
