@@ -1,12 +1,24 @@
 package w3resource.exercise1;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Stack;
+import java.util.*;
 
 public class Leetcode {
     public static void main(String[] args) {
+
+        String s = "racecar";
+        String[] str = {"act", "pots", "tops", "cat", "stop", "hat"};
+        groupAnagrams(str);
+
+//
+//        for (int i = 0, j = s.length()-1; i<j;  i++,j-- ) {
+//            if (s.charAt(i) == s.charAt(j)) {
+//                System.out.println(s.charAt(i));
+//                System.out.println(s.charAt(j));
+//            } else {
+//                System.out.println("not palindrome");
+//                break;
+//            }
+//        }
 //        String s = "(){}}{";
 //        System.out.println(isValid(s));
 
@@ -19,14 +31,14 @@ public class Leetcode {
         int[] num = {1,2,3,5};
 //        System.out.println(isDuplicated(num));
 
-        String s = "racecar";
+//        String s = "racecar";
         String t = "carrace";
 //        System.out.println(isAnagram(s,t));
 
 
         int[] num1 = {4,5,6};
         int target = 10;
-        System.out.println(twoSum(num1,target));
+//        System.out.println(twoSum(num1,target));
     }
 
     public static int[][] merge(int[][] interval) {
@@ -186,5 +198,11 @@ public class Leetcode {
         }
 
         return new int[]{};
+    }
+    public static void groupAnagrams(String[] strs) {
+
+
+
+
     }
 }
